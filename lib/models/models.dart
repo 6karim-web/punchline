@@ -5,7 +5,6 @@ class Joke {
   final String punchline;
   final String category;
   final bool adult;
-  final int shares;
 
   const Joke({
     required this.id,
@@ -14,18 +13,10 @@ class Joke {
     required this.punchline,
     required this.category,
     this.adult = false,
-    this.shares = 0,
   });
 
-  factory Joke.fromMap(Map<String, dynamic> m) => Joke(
-        id: m['id'] as String,
-        title: (m['title'] ?? '') as String,
-        setup: m['setup'] as String,
-        punchline: m['punchline'] as String,
-        category: (m['category'] ?? 'misc') as String,
-        adult: (m['rating'] ?? 'tout_public') == 'adulte',
-        shares: (m['share_count'] ?? 0) as int,
-      );
+  /// What goes to WhatsApp. The card is the brand; the text carries it.
+  String get shareText => '$setup\n\n$punchline';
 }
 
 class Article {
@@ -45,6 +36,8 @@ class Article {
 
   String get age {
     final d = DateTime.now().difference(publishedAt);
+    if (d.isNegative) return 'just now';
+    if (d.inMinutes < 1) return 'just now';
     if (d.inMinutes < 60) return '${d.inMinutes} min ago';
     if (d.inHours < 24) return '${d.inHours} h ago';
     return '${d.inDays} d ago';
@@ -59,7 +52,6 @@ class Ticker {
 
   bool get isUp => changePercent >= 0;
 
-  /// Always formatted — raw doubles leak float artifacts onto the screen.
   String get label =>
       '${isUp ? '+' : '\u2212'}${changePercent.abs().toStringAsFixed(2)}%';
 }

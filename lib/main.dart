@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'data/joke_repository.dart';
 import 'screens/feed_screen.dart';
 import 'screens/markets_screen.dart';
 import 'screens/more_screen.dart';
@@ -6,7 +7,11 @@ import 'screens/punchline_screen.dart';
 import 'theme/app_theme.dart';
 import 'theme/tokens.dart';
 
-void main() => runApp(const PunchlineApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await JokeRepository.instance.load();
+  runApp(const PunchlineApp());
+}
 
 class PunchlineApp extends StatelessWidget {
   const PunchlineApp({super.key});
