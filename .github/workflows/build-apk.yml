@@ -1,0 +1,32 @@
+name: Build APK
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Backup lib
+        run: cp -r lib /tmp/lib-keep && cp pubspec.yaml /tmp/pubspec-keep
+      - name: Generate android folder
+        run: flutter create --project-name punchline --org com.punchline --platforms=android .
+      - name: Restore lib
+        run: rm -rf lib && cp -r /tmp/lib-keep lib && cp /tmp/pubspec-keep pubspec.yaml
+      - name: Get packages
+        run: flutter pub get
+      - name: Build debug APK
+        run: flutter build apk --debug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: punchline-apk
+          path: build/app/outputs/flutter-apk/app-debug.apk
