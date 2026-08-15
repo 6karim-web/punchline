@@ -1,7 +1,7 @@
 name: punchline
-description: A daily punchline, markets, and news.
+description: A daily brief that ends with a punchline.
 publish_to: 'none'
-version: 0.2.0+2
+version: 0.4.0+4
 
 environment:
   sdk: '>=3.3.0 <4.0.0'
@@ -9,10 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   google_fonts: ^6.2.1
   http: ^1.2.2
   xml: ^6.5.0
   share_plus: ^10.1.2
+  shared_preferences: ^2.3.3
+  intl: any
 
 dev_dependencies:
   flutter_lints: ^4.0.0

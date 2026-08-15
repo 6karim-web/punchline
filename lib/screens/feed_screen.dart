@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:share_plus/share_plus.dart';
-import '../data/joke_repository.dart';
 import '../data/news_repository.dart';
-import '../data/sample_data.dart';
+import '../l10n/strings.dart';
+import '../state/app_state.dart';
 import '../models/models.dart';
 import '../theme/tokens.dart';
 import '../widgets/ad_slot.dart';
 import '../widgets/feed_states.dart';
-import '../widgets/market_pulse_card.dart';
 import '../widgets/news_row.dart';
-import '../widgets/punchline_card.dart';
-import '../widgets/streak_card.dart';
 
 class FeedScreen extends StatefulWidget {
   const FeedScreen({super.key});
@@ -25,17 +21,25 @@ class _FeedScreenState extends State<FeedScreen> {
   @override
   void initState() {
     super.initState();
-    _news = NewsRepository.instance.general();
+    _news = NewsRepository.instance.general(AppState.instance.locale);
+    AppState.instance.addListener(_reload);
+  }
+
+  @override
+  void dispose() {
+    AppState.instance.removeListener(_reload);
+    super.dispose();
   }
 
   void _reload() {
-    setState(() => _news = NewsRepository.instance.general(refresh: true));
+    if (!mounted) return;
+    setState(() =>
+        _news = NewsRepository.instance.general(AppState.instance.locale));
   }
 
   @override
   Widget build(BuildContext context) {
-    final joke = JokeRepository.instance.jokeOfTheDay();
-
+    final s = S(AppState.instance.locale);
     return RefreshIndicator(
       color: T.saffron,
       backgroundColor: T.card,
@@ -46,37 +50,27 @@ class _FeedScreenState extends State<FeedScreen> {
       child: ListView(
         padding: const EdgeInsets.all(T.s3),
         children: [
-          PunchlineCard(
-            joke: joke,
-            onShare: () => Share.share(joke.shareText),
-          ),
-          const SizedBox(height: T.s3),
-          const MarketPulseCard(tickers: Sample.tickers),
-          const SizedBox(height: T.s3),
           FutureBuilder<List<Article>>(
             future: _news,
             builder: (context, snap) {
               if (snap.connectionState != ConnectionState.done) {
-                return const Loading(label: 'Fetching headlines');
+                return Loading(label: s('fetchingHeadlines'));
               }
               final items = snap.data ?? const <Article>[];
               if (items.isEmpty) {
                 return Failed(
-                  message: 'No headlines came through.\nCheck your connection.',
-                  onRetry: _reload,
+                  message: s('headlinesFailed'), onRetry: _reload,
                 );
               }
               return Column(
                 children: [
-                  for (final a in items.take(6)) NewsRow(article: a),
+                  for (final a in items) NewsRow(article: a),
                   const AdSlot(
                       placeholder: 'Open a brokerage account in five minutes'),
                 ],
               );
             },
           ),
-          const SizedBox(height: T.s3),
-          const StreakCard(days: 1),
           const SizedBox(height: T.s5),
         ],
       ),

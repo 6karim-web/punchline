@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../l10n/strings.dart';
+import '../state/app_state.dart';
 import '../theme/tokens.dart';
 
 class Loading extends StatelessWidget {
@@ -45,7 +47,7 @@ class Failed extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(T.rControl)),
               ),
-              child: const Text('Try again'),
+              child: Text(S(AppState.instance.locale)('tryAgain')),
             ),
           ],
         ),

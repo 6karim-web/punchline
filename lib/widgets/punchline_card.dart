@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '../l10n/strings.dart';
 import '../models/models.dart';
+import '../state/app_state.dart';
 import '../theme/app_theme.dart';
 import '../theme/tokens.dart';
 import 'dashed_line.dart';
@@ -70,7 +72,7 @@ class _PunchlineCardState extends State<PunchlineCard> {
         children: [
           const Icon(Icons.keyboard_arrow_down, size: 16, color: T.textMuted),
           const SizedBox(width: T.s1 + 2),
-          Text('Tap for the punchline',
+          Text(S(AppState.instance.locale)('tapForPunchline'),
               style: Theme.of(context).textTheme.bodySmall),
         ],
       );
@@ -84,7 +86,7 @@ class _PunchlineCardState extends State<PunchlineCard> {
             children: [
               Expanded(
                 child: _Action(
-                  label: 'Share',
+                  label: S(AppState.instance.locale)('share'),
                   filled: true,
                   onTap: widget.onShare,
                 ),

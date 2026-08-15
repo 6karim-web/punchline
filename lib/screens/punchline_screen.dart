@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import '../data/joke_repository.dart';
+import '../l10n/strings.dart';
 import '../models/models.dart';
+import '../state/app_state.dart';
 import '../theme/tokens.dart';
 import '../widgets/punchline_card.dart';
 
@@ -18,7 +20,7 @@ class _PunchlineScreenState extends State<PunchlineScreen> {
   bool _allowAdult = false;
 
   static const _labels = {
-    'all': 'All',
+    'all': 'all',
     'work': 'Work',
     'marriage': 'Marriage',
     'money': 'Money',
@@ -32,13 +34,14 @@ class _PunchlineScreenState extends State<PunchlineScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final s = S(AppState.instance.locale);
     final jokes = _repo.byCategory(_category, allowAdult: _allowAdult);
 
     return ListView.builder(
       padding: const EdgeInsets.all(T.s3),
       itemCount: jokes.length + 1,
       itemBuilder: (context, i) {
-        if (i == 0) return _header(context, jokes.length);
+        if (i == 0) return _header(context, jokes.length, s);
         final j = jokes[i - 1];
         return Padding(
           padding: const EdgeInsets.only(bottom: T.s3),
@@ -52,7 +55,7 @@ class _PunchlineScreenState extends State<PunchlineScreen> {
     );
   }
 
-  Widget _header(BuildContext context, int count) {
+  Widget _header(BuildContext context, int count, S s) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -63,9 +66,9 @@ class _PunchlineScreenState extends State<PunchlineScreen> {
             children: [
               for (final c in _repo.categories)
                 Padding(
-                  padding: const EdgeInsets.only(right: 7),
+                  padding: const EdgeInsetsDirectional.only(end: 7),
                   child: _Chip(
-                    label: _labels[c] ?? c,
+                    label: c == 'all' ? s('all') : (_labels[c] ?? c),
                     selected: _category == c,
                     onTap: () => setState(() => _category = c),
                   ),
@@ -77,10 +80,10 @@ class _PunchlineScreenState extends State<PunchlineScreen> {
         Row(
           children: [
             Expanded(
-              child: Text('$count punchlines',
+              child: Text('$count ${s('punchlines')}',
                   style: Theme.of(context).textTheme.bodySmall),
             ),
-            Text('Adult', style: Theme.of(context).textTheme.bodySmall),
+            Text(s('adult'), style: Theme.of(context).textTheme.bodySmall),
             Switch(
               value: _allowAdult,
               onChanged: (v) => setState(() => _allowAdult = v),

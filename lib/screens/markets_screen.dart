@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../data/news_repository.dart';
+import '../l10n/strings.dart';
+import '../state/app_state.dart';
 import '../data/sample_data.dart';
 import '../models/models.dart';
 import '../theme/app_theme.dart';
@@ -21,15 +23,25 @@ class _MarketsScreenState extends State<MarketsScreen> {
   @override
   void initState() {
     super.initState();
-    _news = NewsRepository.instance.markets();
+    _news = NewsRepository.instance.markets(AppState.instance.locale);
+    AppState.instance.addListener(_reload);
+  }
+
+  @override
+  void dispose() {
+    AppState.instance.removeListener(_reload);
+    super.dispose();
   }
 
   void _reload() {
-    setState(() => _news = NewsRepository.instance.markets(refresh: true));
+    if (!mounted) return;
+    setState(() =>
+        _news = NewsRepository.instance.markets(AppState.instance.locale));
   }
 
   @override
   Widget build(BuildContext context) {
+    final s = S(AppState.instance.locale);
     return RefreshIndicator(
       color: T.saffron,
       backgroundColor: T.card,
@@ -73,14 +85,12 @@ class _MarketsScreenState extends State<MarketsScreen> {
             future: _news,
             builder: (context, snap) {
               if (snap.connectionState != ConnectionState.done) {
-                return const Loading(label: 'Fetching market news');
+                return Loading(label: s('fetchingHeadlines'));
               }
               final items = snap.data ?? const <Article>[];
               if (items.isEmpty) {
                 return Failed(
-                  message: 'No market news came through.\n'
-                      'Check your connection.',
-                  onRetry: _reload,
+                  message: s('headlinesFailed'), onRetry: _reload,
                 );
               }
               return Column(
@@ -89,10 +99,9 @@ class _MarketsScreenState extends State<MarketsScreen> {
             },
           ),
           const SizedBox(height: 14),
-          const Text(
-            'For informational purposes only. Not investment advice. '
-            'Quotes are sample data in this build.',
-            style: TextStyle(fontSize: 11, height: 1.5, color: T.textFaint),
+          Text(
+            s('notAdvice'),
+            style: const TextStyle(fontSize: 11, height: 1.5, color: T.textFaint),
           ),
           const SizedBox(height: T.s5),
         ],
