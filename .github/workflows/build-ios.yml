@@ -1,0 +1,26 @@
+name: Build iOS
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Generate ios folder
+        run: cp -r lib /tmp/k && cp pubspec.yaml /tmp/p && cp -r assets /tmp/a && flutter create --project-name punchline --org com.punchline --platforms=ios . && rm -rf lib assets && cp -r /tmp/k lib && cp -r /tmp/a assets && cp /tmp/p pubspec.yaml
+      - name: Get packages
+        run: flutter pub get
+      - name: Build unsigned app
+        run: flutter build ios --release --no-codesign
+      - name: Package as ipa
+        run: mkdir -p out/Payload && cp -r build/ios/iphoneos/Runner.app out/Payload/ && cd out && zip -qr punchline.ipa Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: punchline-ipa
+          path: out/punchline.ipa
