@@ -50,7 +50,7 @@ class NewsRow extends StatelessWidget {
             ),
             if (article.imageUrl != null) ...[
               const SizedBox(width: T.s3),
-              Thumb(url: article.imageUrl!, size: 72),
+              NewsThumb(url: article.imageUrl!, size: 72),
             ],
           ],
         ),
@@ -61,10 +61,10 @@ class NewsRow extends StatelessWidget {
 
 /// Thumbnails come from other people's servers, so every one of them is a
 /// potential broken link. Fail to a quiet placeholder, never to a red error.
-class Thumb extends StatelessWidget {
+class NewsThumb extends StatelessWidget {
   final String url;
   final double size;
-  const Thumb({super.key, required this.url, this.size = 72});
+  const NewsThumb({super.key, required this.url, this.size = 72});
 
   @override
   Widget build(BuildContext context) {

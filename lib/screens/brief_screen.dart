@@ -286,7 +286,7 @@ class _BriefScreenState extends State<BriefScreen> {
                   ),
                   if (a.imageUrl != null) ...[
                     const SizedBox(width: T.s3),
-                    Thumb(url: a.imageUrl!, size: 64),
+                    NewsThumb(url: a.imageUrl!, size: 64),
                   ],
                 ],
               ),

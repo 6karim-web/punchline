@@ -115,6 +115,8 @@ class Notifications {
         tz.TZDateTime.from(when, tz.local),
         NotificationDetails(android: channel),
         androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
       );
     } catch (_) {
       // Exact-alarm permission denied, or the OS refused. Not fatal.
