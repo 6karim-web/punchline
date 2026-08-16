@@ -54,6 +54,25 @@ class NewsRepository {
     },
   };
 
+  static const _football = <String, Map<String, String>>{
+    'en': {
+      'ESPN': 'https://www.espn.com/espn/rss/soccer/news',
+      'Sky Sports': 'https://feeds.skynews.com/feeds/rss/sports.xml',
+    },
+    'es': {
+      'Marca': 'https://e00-marca.uecdn.es/rss/futbol/primera-division.xml',
+      'AS': 'https://as.com/rss/futbol/primera.xml',
+    },
+    'fr': {
+      'L Equipe': 'https://www.lequipe.fr/rss/actu_rss_Football.xml',
+      'France 24': 'https://www.france24.com/fr/sports/rss',
+    },
+    'ar': {
+      'BBC Arabic': 'https://feeds.bbci.co.uk/arabic/sports/rss.xml',
+      'France 24': 'https://www.france24.com/ar/sports/rss',
+    },
+  };
+
   final _cache = <String, List<Article>>{};
 
   Future<List<Article>> general(AppLocale l, {bool refresh = false}) =>
@@ -61,6 +80,9 @@ class NewsRepository {
 
   Future<List<Article>> markets(AppLocale l, {bool refresh = false}) =>
       _get('m-${l.code}', _markets[l.code] ?? _markets['en']!, refresh);
+
+  Future<List<Article>> football(AppLocale l, {bool refresh = false}) =>
+      _get('f-${l.code}', _football[l.code] ?? _football['en']!, refresh);
 
   Future<List<Article>> _get(
       String key, Map<String, String> feeds, bool refresh) async {
@@ -102,6 +124,7 @@ class NewsRepository {
               source: source,
               title: title,
               url: _text(item, 'link'),
+              imageUrl: _image(item),
               publishedAt: _parseDate(_text(item, 'pubDate')),
             );
           })
@@ -110,6 +133,37 @@ class NewsRepository {
     } catch (_) {
       return const [];
     }
+  }
+
+  /// Every newsroom hides its thumbnail somewhere different. Four places to
+  /// look, in order of how clean the result usually is.
+  static String? _image(XmlElement item) {
+    for (final tag in ['media:thumbnail', 'media:content']) {
+      final el = item.findElements(tag);
+      if (el.isNotEmpty) {
+        final url = el.first.getAttribute('url');
+        if (url != null && url.startsWith('http')) return url;
+      }
+    }
+    final enc = item.findElements('enclosure');
+    if (enc.isNotEmpty) {
+      final url = enc.first.getAttribute('url');
+      final type = enc.first.getAttribute('type') ?? '';
+      if (url != null && (type.startsWith('image') || _looksImage(url))) {
+        return url;
+      }
+    }
+    // Last resort: the first <img> buried in the HTML description.
+    final desc = _text(item, 'description');
+    final m = RegExp(r'<img[^>]+src="([^"]+)"').firstMatch(desc);
+    final url = m?.group(1);
+    return (url != null && url.startsWith('http')) ? url : null;
+  }
+
+  static bool _looksImage(String url) {
+    final u = url.toLowerCase();
+    return u.endsWith('.jpg') || u.endsWith('.jpeg') ||
+        u.endsWith('.png') || u.endsWith('.webp');
   }
 
   static String _text(XmlElement parent, String tag) {

@@ -24,6 +24,7 @@ class Article {
   final String source;
   final String title;
   final String url;
+  final String? imageUrl;
   final DateTime publishedAt;
 
   const Article({
@@ -32,6 +33,7 @@ class Article {
     required this.title,
     required this.url,
     required this.publishedAt,
+    this.imageUrl,
   });
 
   String get age {

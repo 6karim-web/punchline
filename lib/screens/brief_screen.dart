@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 import '../data/brief_repository.dart';
+import '../data/digest_repository.dart';
 import '../data/news_repository.dart';
 import '../data/sample_data.dart';
 import '../data/weather_repository.dart';
@@ -11,6 +12,7 @@ import '../models/models.dart';
 import '../theme/app_theme.dart';
 import '../theme/tokens.dart';
 import '../widgets/feed_states.dart';
+import '../widgets/news_row.dart';
 import '../widgets/punchline_card.dart';
 
 /// The brief is the product; the tabs are the depth behind it.
@@ -92,6 +94,7 @@ class _BriefScreenState extends State<BriefScreen> {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  _digest(news, s),
                   _headlines(news, s),
                   const SizedBox(height: T.s3),
                   _marketsBlock(s),
@@ -205,6 +208,50 @@ class _BriefScreenState extends State<BriefScreen> {
     );
   }
 
+  /// The day in one sentence, plus the two stories behind it. This is the
+  /// block that makes the brief feel written rather than assembled.
+  Widget _digest(List<Article> news, S s) {
+    final digest = DigestRepository.instance.build(news, AppState.instance.locale);
+    if (digest == null) return const SizedBox.shrink();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        _sectionLabel(s('digest')),
+        _card(
+          onTap: () => widget.onOpenTab(3),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(digest.sentence,
+                  style: const TextStyle(
+                      fontSize: 13, height: 1.5, color: T.textMuted)),
+              const SizedBox(height: T.s2),
+              Text(digest.topics.first,
+                  style: const TextStyle(
+                      fontSize: 17, height: 1.35, color: T.text)),
+              if (digest.topics.length > 1) ...[
+                const SizedBox(height: T.s3),
+                const Divider(height: 1, thickness: 0.5),
+                const SizedBox(height: T.s3),
+                Text(s('alsoToday'),
+                    style: const TextStyle(fontSize: 11, color: T.textFaint)),
+                const SizedBox(height: T.s2),
+                for (final t in digest.topics.skip(1))
+                  Padding(
+                    padding: const EdgeInsetsDirectional.only(bottom: T.s2),
+                    child: Text('\u2022  $t',
+                        style: const TextStyle(
+                            fontSize: 14, height: 1.4, color: T.textMuted)),
+                  ),
+              ],
+            ],
+          ),
+        ),
+        const SizedBox(height: T.s3),
+      ],
+    );
+  }
+
   Widget _headlines(List<Article> news, S s) {
     if (news.isEmpty) {
       return Failed(
@@ -220,15 +267,27 @@ class _BriefScreenState extends State<BriefScreen> {
             padding: const EdgeInsets.only(bottom: T.s2),
             child: _card(
               onTap: () => widget.onOpenTab(3),
-              child: Column(
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(a.source,
-                      style: const TextStyle(fontSize: 11, color: T.blue)),
-                  const SizedBox(height: 6),
-                  Text(a.title,
-                      style: const TextStyle(
-                          fontSize: 15, height: 1.4, color: T.text)),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(a.source,
+                            style:
+                                const TextStyle(fontSize: 11, color: T.blue)),
+                        const SizedBox(height: 6),
+                        Text(a.title,
+                            style: const TextStyle(
+                                fontSize: 15, height: 1.4, color: T.text)),
+                      ],
+                    ),
+                  ),
+                  if (a.imageUrl != null) ...[
+                    const SizedBox(width: T.s3),
+                    Thumb(url: a.imageUrl!, size: 64),
+                  ],
                 ],
               ),
             ),

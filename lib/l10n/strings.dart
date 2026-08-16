@@ -43,6 +43,11 @@ class S {
       'adviceCold': 'Bitter cold. Layer up.',
       'adviceNice': 'Good day to be outside.',
       'adviceNothing': 'Nothing dramatic today.',
+      'digest': 'THE STORY TODAY',
+      'more': 'More', 'prayer': 'Prayer', 'notes': 'Notes', 'cook': 'Cook', 'football': 'Football', 'books': 'Books', 'support': 'Support', 'games': 'Games', 'forecast': 'Forecast', 'nextPrayer': 'Next prayer', 'fajr': 'Fajr', 'sunrise': 'Sunrise', 'dhuhr': 'Dhuhr', 'asr': 'Asr', 'maghrib': 'Maghrib', 'isha': 'Isha', 'method': 'Calculation method', 'notifyMe': 'Notify me', 'addNote': 'Add a note', 'noNotes': 'Nothing noted yet.', 'cuisine': 'Cuisine', 'ingredients': 'Ingredients', 'steps': 'Steps', 'nothingHere': 'Nothing here yet.', 'today7': 'Next 7 days', 'in_': 'in', 'comingSoon': 'Coming soon', 'tipUs': 'Buy us a coffee', 'followTikTok': 'Follow on TikTok', 'contactUs': 'Contact us', 'supportBlurb': 'Punchline is free. If it made your morning better, this helps keep it going.',
+      'everyoneLeadsWith': 'Every newsroom is leading with:',
+      'storiesThisMorning': 'Stories this morning:',
+      'alsoToday': 'Also today',
     },
     'es': {
       'brief': 'Resumen', 'punchline': 'Chistes', 'markets': 'Mercados',
@@ -78,6 +83,11 @@ class S {
       'adviceCold': 'Frio intenso. Abrigate.',
       'adviceNice': 'Buen dia para salir.',
       'adviceNothing': 'Nada dramatico hoy.',
+      'digest': 'LA NOTICIA DE HOY',
+      'more': 'Mas', 'prayer': 'Oracion', 'notes': 'Notas', 'cook': 'Cocina', 'football': 'Futbol', 'books': 'Libros', 'support': 'Apoyo', 'games': 'Juegos', 'forecast': 'Prevision', 'nextPrayer': 'Proxima oracion', 'fajr': 'Fajr', 'sunrise': 'Amanecer', 'dhuhr': 'Dhuhr', 'asr': 'Asr', 'maghrib': 'Maghrib', 'isha': 'Isha', 'method': 'Metodo de calculo', 'notifyMe': 'Avisarme', 'addNote': 'Anadir nota', 'noNotes': 'Nada anotado aun.', 'cuisine': 'Cocina', 'ingredients': 'Ingredientes', 'steps': 'Pasos', 'nothingHere': 'Nada por aqui todavia.', 'today7': 'Proximos 7 dias', 'in_': 'en', 'comingSoon': 'Proximamente', 'tipUs': 'Invitanos un cafe', 'followTikTok': 'Siguenos en TikTok', 'contactUs': 'Contacto', 'supportBlurb': 'Punchline es gratis. Si te alegro la manana, esto ayuda a mantenerla.',
+      'everyoneLeadsWith': 'Todos los medios abren con:',
+      'storiesThisMorning': 'Noticias esta manana:',
+      'alsoToday': 'Tambien hoy',
     },
     'fr': {
       'brief': 'Le brief', 'punchline': 'Blagues', 'markets': 'Marches',
@@ -115,6 +125,11 @@ class S {
       'adviceCold': 'Froid mordant. Couvrez-vous.',
       'adviceNice': 'Belle journee pour sortir.',
       'adviceNothing': 'Rien de dramatique aujourd hui.',
+      'digest': 'LE SUJET DU JOUR',
+      'more': 'Plus', 'prayer': 'Priere', 'notes': 'Pense-bete', 'cook': 'Cuisine', 'football': 'Football', 'books': 'Livres', 'support': 'Soutien', 'games': 'Jeux', 'forecast': 'Previsions', 'nextPrayer': 'Prochaine priere', 'fajr': 'Fajr', 'sunrise': 'Lever du soleil', 'dhuhr': 'Dhuhr', 'asr': 'Asr', 'maghrib': 'Maghrib', 'isha': 'Isha', 'method': 'Methode de calcul', 'notifyMe': 'Me prevenir', 'addNote': 'Ajouter une note', 'noNotes': 'Rien de note pour l instant.', 'cuisine': 'Cuisine', 'ingredients': 'Ingredients', 'steps': 'Etapes', 'nothingHere': 'Rien ici pour l instant.', 'today7': '7 prochains jours', 'in_': 'dans', 'comingSoon': 'Bientot', 'tipUs': 'Offrez-nous un cafe', 'followTikTok': 'Suivez-nous sur TikTok', 'contactUs': 'Nous ecrire', 'supportBlurb': 'Punchline est gratuite. Si elle a ameliore votre matin, ceci aide a la faire vivre.',
+      'everyoneLeadsWith': 'Toutes les redactions ouvrent sur :',
+      'storiesThisMorning': 'Sujets ce matin :',
+      'alsoToday': 'Aussi aujourd hui',
     },
     'ar': {
       'brief': 'الموجز', 'punchline': 'نكت', 'markets': 'الأسواق',
@@ -150,6 +165,11 @@ class S {
       'adviceCold': 'برد قارس. البس طبقات.',
       'adviceNice': 'يوم جميل للخروج.',
       'adviceNothing': 'لا شيء استثنائي اليوم.',
+      'digest': 'حدث اليوم',
+      'more': 'المزيد', 'prayer': 'الصلاة', 'notes': 'مفكرة', 'cook': 'المطبخ', 'football': 'كرة القدم', 'books': 'كتب', 'support': 'الدعم', 'games': 'ألعاب', 'forecast': 'التوقعات', 'nextPrayer': 'الصلاة القادمة', 'fajr': 'الفجر', 'sunrise': 'الشروق', 'dhuhr': 'الظهر', 'asr': 'العصر', 'maghrib': 'المغرب', 'isha': 'العشاء', 'method': 'طريقة الحساب', 'notifyMe': 'نبهني', 'addNote': 'أضف ملاحظة', 'noNotes': 'لا توجد ملاحظات بعد.', 'cuisine': 'المطبخ', 'ingredients': 'المكونات', 'steps': 'الخطوات', 'nothingHere': 'لا شيء هنا بعد.', 'today7': 'الأيام السبعة القادمة', 'in_': 'خلال', 'comingSoon': 'قريبا', 'tipUs': 'ادعمنا بقهوة', 'followTikTok': 'تابعنا على تيك توك', 'contactUs': 'اتصل بنا', 'supportBlurb': 'بنشلاين مجاني. إذا أسعد صباحك، فهذا يساعد على استمراره.',
+      'everyoneLeadsWith': 'كل غرف الأخبار تتصدر بـ:',
+      'storiesThisMorning': 'أخبار هذا الصباح:',
+      'alsoToday': 'أيضا اليوم',
     },
   };
 }

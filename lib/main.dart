@@ -5,16 +5,21 @@ import 'l10n/strings.dart';
 import 'screens/brief_screen.dart';
 import 'screens/feed_screen.dart';
 import 'screens/markets_screen.dart';
+import 'screens/more_screen.dart';
 import 'screens/punchline_screen.dart';
 import 'screens/settings_screen.dart';
+import 'services/notifications.dart';
+import 'data/notes_repository.dart';
 import 'state/app_state.dart';
 import 'theme/app_theme.dart';
 import 'theme/tokens.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Notifications.instance.init();
   await Future.wait([
     JokeRepository.instance.load(),
+    NotesRepository.instance.load(),
     AppState.instance.load(),
   ]);
   runApp(const PunchlineApp());
@@ -63,13 +68,16 @@ class _ShellState extends State<Shell> {
   @override
   Widget build(BuildContext context) {
     final s = S(AppState.instance.locale);
-    final titles = [s('brief'), s('punchline'), s('markets'), s('news')];
+    final titles = [
+      s('brief'), s('punchline'), s('markets'), s('news'), s('more'),
+    ];
 
     final screens = [
       BriefScreen(onOpenTab: _open),
       const PunchlineScreen(),
       const MarketsScreen(),
       const FeedScreen(),
+      const MoreScreen(),
     ];
 
     return Scaffold(
@@ -113,6 +121,11 @@ class _ShellState extends State<Shell> {
                 icon: const Icon(Icons.article_outlined, color: T.textFaint),
                 selectedIcon: const Icon(Icons.article_outlined, color: T.text),
                 label: s('news')),
+            NavigationDestination(
+                icon: const Icon(Icons.grid_view_outlined, color: T.textFaint),
+                selectedIcon:
+                    const Icon(Icons.grid_view_outlined, color: T.text),
+                label: s('more')),
           ],
         ),
       ),
