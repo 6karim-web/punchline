@@ -22,6 +22,8 @@ jobs:
         run: flutter create --project-name punchline --org com.punchline --platforms=android .
       - name: Restore lib
         run: rm -rf lib && cp -r /tmp/lib-keep lib && cp /tmp/pubspec-keep pubspec.yaml
+      - name: Patch android config
+        run: python3 tool/patch_android.py
       - name: Get packages
         run: flutter pub get
       - name: Build debug APK
