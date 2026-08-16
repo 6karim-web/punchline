@@ -23,21 +23,20 @@ class DigestRepository {
   static final instance = DigestRepository._();
 
   static const _stop = <String>{
-    // English
-    'the','a','an','and','or','but','of','to','in','on','for','with','at','by',
-    'from','as','is','are','was','were','be','been','it','its','this','that',
-    'his','her','their','they','he','she','you','we','not','after','over',
-    'new','say','says','said','will','has','have','more','than','about','into',
-    'what','who','how','why','when','where','can','could','would','may','one',
-    'two','first','last','amid','out','up','down','off','your',
-    // Spanish
-    'el','la','los','las','un','una','de','del','y','o','en','con','por','para',
-    'que','se','su','sus','al','lo','es','son','como','mas','pero','sobre',
-    // French
-    'le','les','des','du','une','et','ou','dans','avec','pour','par','sur',
-    'qui','que','ne','pas','son','ses','aux','est','sont','plus','apres','cette',
-    // Arabic
-    'في','من','على','الى','عن','مع','هذا','هذه','التي','الذي','بعد','قبل','بين',
+    'the', 'a', 'an', 'and', 'or', 'but', 'of', 'to', 'in', 'on', 'for',
+    'with', 'at', 'by', 'from', 'as', 'is', 'are', 'was', 'were', 'be',
+    'been', 'it', 'its', 'this', 'that', 'his', 'her', 'their', 'they',
+    'he', 'she', 'you', 'we', 'not', 'after', 'over', 'new', 'say',
+    'says', 'said', 'will', 'has', 'have', 'more', 'than', 'about',
+    'into', 'what', 'who', 'how', 'why', 'when', 'where', 'can', 'could',
+    'would', 'may', 'one', 'two', 'first', 'last', 'amid', 'out', 'up',
+    'down', 'off', 'your', 'el', 'la', 'los', 'las', 'un', 'una', 'de',
+    'del', 'y', 'o', 'en', 'con', 'por', 'para', 'que', 'se', 'su', 'sus',
+    'al', 'lo', 'es', 'son', 'como', 'mas', 'pero', 'sobre', 'le', 'les',
+    'des', 'du', 'une', 'et', 'ou', 'dans', 'avec', 'pour', 'par', 'sur',
+    'qui', 'ne', 'pas', 'ses', 'aux', 'est', 'sont', 'plus', 'apres',
+    'cette', 'في', 'من', 'على', 'الى', 'عن', 'مع', 'هذا', 'هذه', 'التي',
+    'الذي', 'بعد', 'قبل', 'بين',
   };
 
   Digest? build(List<Article> articles, AppLocale locale) {
