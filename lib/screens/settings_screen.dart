@@ -48,7 +48,7 @@ class SettingsSheet extends StatelessWidget {
         padding: const EdgeInsetsDirectional.fromSTEB(T.s4, T.s2, T.s4, T.s2),
         child: Text(text,
             style: const TextStyle(
-                fontSize: 11, letterSpacing: 0.9, color: T.inkMuted)),
+                fontSize: 11, letterSpacing: 0.9, color: T.muted)),
       );
 
   Widget _row({
@@ -64,7 +64,7 @@ class SettingsSheet extends StatelessWidget {
         subtitle: subtitle == null
             ? null
             : Text(subtitle,
-                style: const TextStyle(fontSize: 12, color: T.inkFaint)),
+                style: const TextStyle(fontSize: 12, color: T.faint)),
         trailing: selected
             ? const Icon(Icons.check, size: 18, color: T.coral)
             : null,
