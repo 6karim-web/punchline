@@ -1,35 +1,45 @@
 import 'package:flutter/material.dart';
 
-/// The single source of truth for every visual value in the app.
-/// Nothing outside this file may declare a raw colour or spacing number.
+/// The single source of truth for every visual value. Nothing outside this
+/// file declares a raw colour.
+///
+/// The palette is warm paper rather than white, and the joy comes from the
+/// accents rather than from decoration: no gradients, no shadows, no glow.
+/// Elegance is what keeps cheerful from becoming childish — the colours are
+/// loud, everything around them is quiet.
 class T {
   T._();
 
-  // Surfaces — in a dark UI, elevation is encoded by lightness.
-  static const canvas = Color(0xFF0E1014);
-  static const card = Color(0xFF191C22);
-  static const sheet = Color(0xFF232730);
-  static const border = Color(0xFF2C313B);
-  static const borderSoft = Color(0xFF3A404C);
+  static const canvas = Color(0xFFFDF9F3); // warm paper, never pure white
+  static const surface = Color(0xFFFFFFFF);
+  static const raised = Color(0xFFFFFDFA);
+  static const border = Color(0xFFEDE4D8);
+  static const borderSoft = Color(0xFFF5EFE6);
 
-  // Text — never pure white on near-black; it haloes.
-  static const text = Color(0xFFF2EFE9);
-  static const textMuted = Color(0xFF8E96A3);
-  static const textFaint = Color(0xFF6E7684);
+  static const ink = Color(0xFF1C1917); // near-black, never pure black
+  static const muted = Color(0xFF7A716B);
+  static const faint = Color(0xFFA8A09A);
 
-  // Accents — one per section.
-  static const saffron = Color(0xFFF5B324); // Punchline
-  static const blue = Color(0xFF5B9BE8); // News
-  static const violet = Color(0xFF9B8CFF); // Faith
+  // Six accents. Each category owns one, so the library reads as a colour
+  // wheel rather than a list — that variety IS the cheerfulness.
+  static const coral = Color(0xFFFF6B4A);
+  static const sun = Color(0xFFFFB800);
+  static const mint = Color(0xFF10C99B);
+  static const violet = Color(0xFF7B61FF);
+  static const sky = Color(0xFF3D9BFF);
+  static const rose = Color(0xFFFF5C8A);
 
-  // Reserved: green and red mean market direction and nothing else, anywhere.
-  static const up = Color(0xFF26C281);
-  static const down = Color(0xFFE8503A);
+  static const accents = <Color>[coral, sun, mint, violet, sky, rose];
 
-  // Tinted pill backgrounds.
-  static const blueTint = Color(0xFF16243A);
+  /// Stable colour per category: the same joke always wears the same colour,
+  /// which is what makes the library feel organised rather than random.
+  static Color forCategory(String category) =>
+      accents[category.hashCode.abs() % accents.length];
 
-  // Spacing — six values, no others.
+  /// The pale wash behind a card. Low enough that ink stays readable.
+  static Color tint(Color c) => Color.alphaBlend(c.withValues(alpha: 0.09), canvas);
+
+  // Spacing — six values, nothing else.
   static const s1 = 4.0;
   static const s2 = 8.0;
   static const s3 = 12.0;
@@ -37,13 +47,11 @@ class T {
   static const s5 = 24.0;
   static const s6 = 32.0;
 
-  // Radii.
-  static const rControl = 8.0;
-  static const rCard = 12.0;
-  static const rSheet = 20.0;
+  static const rControl = 10.0;
+  static const rCard = 16.0;
+  static const rSheet = 24.0;
   static const rPill = 99.0;
 
-  // Motion — one animation in the whole app.
   static const foldDuration = Duration(milliseconds: 260);
   static const foldCurve = Cubic(0.2, 0.8, 0.3, 1.1);
 }

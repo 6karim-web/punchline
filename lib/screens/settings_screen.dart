@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../data/weather_repository.dart';
 import '../l10n/app_locale.dart';
 import '../l10n/strings.dart';
 import '../state/app_state.dart';
@@ -10,7 +9,7 @@ class SettingsSheet extends StatelessWidget {
 
   static Future<void> show(BuildContext context) => showModalBottomSheet(
         context: context,
-        backgroundColor: T.sheet,
+        backgroundColor: T.surface,
         isScrollControlled: true,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(T.rSheet)),
@@ -39,14 +38,6 @@ class SettingsSheet extends StatelessWidget {
                 selected: state.locale == l,
                 onTap: () => state.setLocale(l),
               ),
-            const SizedBox(height: T.s4),
-            _label(s('yourCity')),
-            for (final c in WeatherRepository.cities)
-              _row(
-                title: c.name,
-                selected: state.city.name == c.name,
-                onTap: () => state.setCity(c),
-              ),
           ],
         ),
       ),
@@ -57,7 +48,7 @@ class SettingsSheet extends StatelessWidget {
         padding: const EdgeInsetsDirectional.fromSTEB(T.s4, T.s2, T.s4, T.s2),
         child: Text(text,
             style: const TextStyle(
-                fontSize: 11, letterSpacing: 0.9, color: T.textMuted)),
+                fontSize: 11, letterSpacing: 0.9, color: T.inkMuted)),
       );
 
   Widget _row({
@@ -69,13 +60,13 @@ class SettingsSheet extends StatelessWidget {
       ListTile(
         dense: true,
         title: Text(title,
-            style: const TextStyle(fontSize: 15, color: T.text)),
+            style: const TextStyle(fontSize: 15, color: T.ink)),
         subtitle: subtitle == null
             ? null
             : Text(subtitle,
-                style: const TextStyle(fontSize: 12, color: T.textFaint)),
+                style: const TextStyle(fontSize: 12, color: T.inkFaint)),
         trailing: selected
-            ? const Icon(Icons.check, size: 18, color: T.saffron)
+            ? const Icon(Icons.check, size: 18, color: T.coral)
             : null,
         onTap: onTap,
       );

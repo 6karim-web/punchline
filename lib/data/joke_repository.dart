@@ -67,5 +67,12 @@ class JokeRepository {
     return pick;
   }
 
+  Joke? byId(String id) {
+    for (final j in _all) {
+      if (j.id == id) return j;
+    }
+    return null;
+  }
+
   int get total => _all.where((j) => !j.adult).length;
 }

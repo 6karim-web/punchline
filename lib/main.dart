@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'data/joke_repository.dart';
+import 'data/journal_repository.dart';
+import 'data/profile_repository.dart';
 import 'l10n/strings.dart';
-import 'screens/brief_screen.dart';
-import 'screens/feed_screen.dart';
-import 'screens/markets_screen.dart';
-import 'screens/more_screen.dart';
-import 'screens/punchline_screen.dart';
-import 'screens/settings_screen.dart';
-import 'services/notifications.dart';
-import 'data/notes_repository.dart';
+import 'screens/games_screen.dart';
+import 'screens/journal_screen.dart';
+import 'screens/library_screen.dart';
+import 'screens/today_screen.dart';
+import 'screens/you_screen.dart';
 import 'state/app_state.dart';
 import 'theme/app_theme.dart';
 import 'theme/tokens.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Notifications.instance.init();
   await Future.wait([
     JokeRepository.instance.load(),
-    NotesRepository.instance.load(),
+    Profile.instance.load(),
+    JournalRepository.instance.load(),
     AppState.instance.load(),
   ]);
   runApp(const PunchlineApp());
@@ -37,8 +36,8 @@ class PunchlineApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: buildTheme(),
         locale: AppState.instance.locale.locale,
-        // These delegates are what give us right-to-left for free: Material
-        // reads the locale and flips every directional inset in the app.
+        // These delegates give right-to-left for free: Material reads the
+        // locale and flips every directional inset in the app.
         localizationsDelegates: const [
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
@@ -68,64 +67,54 @@ class _ShellState extends State<Shell> {
   @override
   Widget build(BuildContext context) {
     final s = S(AppState.instance.locale);
-    final titles = [
-      s('brief'), s('punchline'), s('markets'), s('news'), s('more'),
-    ];
 
     final screens = [
-      BriefScreen(onOpenTab: _open),
-      const PunchlineScreen(),
-      const MarketsScreen(),
-      const FeedScreen(),
-      const MoreScreen(),
+      TodayScreen(onOpenTab: _open),
+      const LibraryScreen(),
+      const GamesScreen(),
+      const JournalScreen(),
+      const YouScreen(),
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(titles[_index]),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.tune, size: 20, color: T.textMuted),
-            onPressed: () => SettingsSheet.show(context),
-          ),
-        ],
-        shape: const Border(bottom: BorderSide(color: T.border, width: 0.5)),
+      body: SafeArea(
+        bottom: false,
+        child: IndexedStack(index: _index, children: screens),
       ),
-      body: IndexedStack(index: _index, children: screens),
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
-          border: Border(top: BorderSide(color: T.border, width: 0.5)),
+          color: T.canvas,
+          border: Border(top: BorderSide(color: T.border, width: 1)),
         ),
         child: NavigationBar(
           selectedIndex: _index,
           onDestinationSelected: _open,
           backgroundColor: T.canvas,
           surfaceTintColor: Colors.transparent,
-          indicatorColor: Colors.transparent,
-          height: 62,
+          indicatorColor: T.coral.withValues(alpha: 0.14),
+          height: 64,
           labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
           destinations: [
             NavigationDestination(
-                icon: const Icon(Icons.wb_twilight, color: T.textFaint),
-                selectedIcon: const Icon(Icons.wb_twilight, color: T.text),
-                label: s('brief')),
+                icon: const Icon(Icons.wb_sunny_outlined, color: T.faint),
+                selectedIcon: const Icon(Icons.wb_sunny, color: T.coral),
+                label: s('today')),
             NavigationDestination(
-                icon: const Icon(Icons.mood_outlined, color: T.textFaint),
-                selectedIcon: const Icon(Icons.mood_outlined, color: T.text),
-                label: s('punchline')),
+                icon: const Icon(Icons.auto_stories_outlined, color: T.faint),
+                selectedIcon: const Icon(Icons.auto_stories, color: T.coral),
+                label: s('library')),
             NavigationDestination(
-                icon: const Icon(Icons.show_chart, color: T.textFaint),
-                selectedIcon: const Icon(Icons.show_chart, color: T.text),
-                label: s('markets')),
+                icon: const Icon(Icons.videogame_asset_outlined, color: T.faint),
+                selectedIcon: const Icon(Icons.videogame_asset, color: T.coral),
+                label: s('games')),
             NavigationDestination(
-                icon: const Icon(Icons.article_outlined, color: T.textFaint),
-                selectedIcon: const Icon(Icons.article_outlined, color: T.text),
-                label: s('news')),
+                icon: const Icon(Icons.edit_note_outlined, color: T.faint),
+                selectedIcon: const Icon(Icons.edit_note, color: T.coral),
+                label: s('journal')),
             NavigationDestination(
-                icon: const Icon(Icons.grid_view_outlined, color: T.textFaint),
-                selectedIcon:
-                    const Icon(Icons.grid_view_outlined, color: T.text),
-                label: s('more')),
+                icon: const Icon(Icons.person_outline, color: T.faint),
+                selectedIcon: const Icon(Icons.person, color: T.coral),
+                label: s('you')),
           ],
         ),
       ),
