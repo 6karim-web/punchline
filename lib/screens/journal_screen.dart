@@ -89,26 +89,26 @@ class _JournalScreenState extends State<JournalScreen> {
     return ListView(
       padding: const EdgeInsets.all(T.s4),
       children: [
-        Text(s('journal'), style: AppType.display(T.ink, size: 30)),
+        Text(s('journal'), style: AppType.display(T.white, size: 30)),
         const SizedBox(height: T.s2),
         Text(s('journalPrompt'),
-            style: const TextStyle(fontSize: 14, height: 1.5, color: T.muted)),
+            style: const TextStyle(fontSize: 14, height: 1.5, color: T.dim)),
         const SizedBox(height: T.s4),
         TextField(
           controller: _controller,
           maxLines: 4,
           minLines: 3,
           textCapitalization: TextCapitalization.sentences,
-          style: const TextStyle(fontSize: 16, height: 1.5, color: T.ink),
+          style: const TextStyle(fontSize: 16, height: 1.5, color: T.white),
           decoration: InputDecoration(
             hintText: s('journalHint'),
             hintStyle: const TextStyle(fontSize: 15, color: T.faint),
             filled: true,
-            fillColor: T.surface,
+            fillColor: T.panel,
             contentPadding: const EdgeInsets.all(T.s4),
-            border: _outline(T.border),
-            enabledBorder: _outline(T.border),
-            focusedBorder: _outline(T.sky),
+            border: _outline(T.line),
+            enabledBorder: _outline(T.line),
+            focusedBorder: _outline(T.museum),
           ),
         ),
         const SizedBox(height: T.s3),
@@ -119,7 +119,7 @@ class _JournalScreenState extends State<JournalScreen> {
             alignment: Alignment.center,
             padding: const EdgeInsets.symmetric(vertical: 15),
             decoration: BoxDecoration(
-              color: T.sky,
+              color: T.museum,
               borderRadius: BorderRadius.circular(T.rControl),
             ),
             child: Text(s('letItOut'),
@@ -138,7 +138,7 @@ class _JournalScreenState extends State<JournalScreen> {
         ],
         if (_repo.entries.isNotEmpty) ...[
           const SizedBox(height: T.s5),
-          Text(s('yourEntries'), style: AppType.eyebrow(T.faint)),
+          Text(s('yourEntries'), style: AppType.tag(T.faint)),
           const SizedBox(height: T.s2),
           for (final e in _repo.entries.take(30))
             Dismissible(
@@ -148,7 +148,7 @@ class _JournalScreenState extends State<JournalScreen> {
                 alignment: AlignmentDirectional.centerEnd,
                 padding: const EdgeInsetsDirectional.only(end: T.s4),
                 child: const Icon(Icons.delete_outline,
-                    size: 20, color: T.coral),
+                    size: 20, color: T.wheel),
               ),
               onDismissed: (_) async {
                 await _repo.remove(e.id);
@@ -159,8 +159,8 @@ class _JournalScreenState extends State<JournalScreen> {
                 margin: const EdgeInsets.only(bottom: T.s2),
                 padding: const EdgeInsets.all(T.s4),
                 decoration: BoxDecoration(
-                  color: T.surface,
-                  border: Border.all(color: T.border, width: 1),
+                  color: T.panel,
+                  border: Border.all(color: T.line, width: 1),
                   borderRadius: BorderRadius.circular(T.rCard),
                 ),
                 child: Column(
@@ -168,7 +168,7 @@ class _JournalScreenState extends State<JournalScreen> {
                   children: [
                     Text(e.text,
                         style: const TextStyle(
-                            fontSize: 14.5, height: 1.5, color: T.ink)),
+                            fontSize: 14.5, height: 1.5, color: T.white)),
                     const SizedBox(height: 6),
                     Text(_when(e.at),
                         style: const TextStyle(fontSize: 11, color: T.faint)),
@@ -186,16 +186,12 @@ class _JournalScreenState extends State<JournalScreen> {
     final accent = T.forCategory(joke.category);
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(
-        color: T.tint(accent),
-        border: Border.all(color: accent.withValues(alpha: 0.28), width: 1),
-        borderRadius: BorderRadius.circular(T.rCard),
-      ),
+      decoration: T.lit(accent),
       padding: const EdgeInsets.all(T.s4 + 2),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(s('onThatNote'), style: AppType.eyebrow(accent)),
+          Text(s('onThatNote'), style: AppType.tag(accent)),
           const SizedBox(height: T.s3),
           Text(joke.setup, style: Theme.of(context).textTheme.bodyLarge),
           const SizedBox(height: T.s3),
@@ -209,8 +205,8 @@ class _JournalScreenState extends State<JournalScreen> {
   Widget _supportCard(S s) => Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          color: T.surface,
-          border: Border.all(color: T.sky, width: 1.5),
+          color: T.panel,
+          border: Border.all(color: T.museum, width: 1.5),
           borderRadius: BorderRadius.circular(T.rCard),
         ),
         padding: const EdgeInsets.all(T.s4 + 2),
@@ -221,7 +217,7 @@ class _JournalScreenState extends State<JournalScreen> {
             const SizedBox(height: T.s2),
             Text(s('supportBody'),
                 style: const TextStyle(
-                    fontSize: 14.5, height: 1.6, color: T.ink)),
+                    fontSize: 14.5, height: 1.6, color: T.white)),
           ],
         ),
       );

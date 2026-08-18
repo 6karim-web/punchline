@@ -4,10 +4,9 @@ import 'data/joke_repository.dart';
 import 'data/journal_repository.dart';
 import 'data/profile_repository.dart';
 import 'l10n/strings.dart';
-import 'screens/games_screen.dart';
 import 'screens/journal_screen.dart';
 import 'screens/library_screen.dart';
-import 'screens/today_screen.dart';
+import 'screens/lobby_screen.dart';
 import 'screens/you_screen.dart';
 import 'state/app_state.dart';
 import 'theme/app_theme.dart';
@@ -62,18 +61,15 @@ class Shell extends StatefulWidget {
 class _ShellState extends State<Shell> {
   int _index = 0;
 
-  void _open(int i) => setState(() => _index = i);
-
   @override
   Widget build(BuildContext context) {
     final s = S(AppState.instance.locale);
 
-    final screens = [
-      TodayScreen(onOpenTab: _open),
-      const LibraryScreen(),
-      const GamesScreen(),
-      const JournalScreen(),
-      const YouScreen(),
+    const screens = [
+      LobbyScreen(),
+      LibraryScreen(),
+      JournalScreen(),
+      YouScreen(),
     ];
 
     return Scaffold(
@@ -83,37 +79,35 @@ class _ShellState extends State<Shell> {
       ),
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
-          color: T.canvas,
-          border: Border(top: BorderSide(color: T.border, width: 1)),
+          color: T.night,
+          border: Border(top: BorderSide(color: T.lineSoft, width: 1)),
         ),
         child: NavigationBar(
           selectedIndex: _index,
-          onDestinationSelected: _open,
-          backgroundColor: T.canvas,
+          onDestinationSelected: (i) => setState(() => _index = i),
+          backgroundColor: T.night,
           surfaceTintColor: Colors.transparent,
-          indicatorColor: T.coral.withValues(alpha: 0.14),
-          height: 64,
+          indicatorColor: T.gold.withValues(alpha: 0.14),
+          height: 66,
           labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
           destinations: [
             NavigationDestination(
-                icon: const Icon(Icons.wb_sunny_outlined, color: T.faint),
-                selectedIcon: const Icon(Icons.wb_sunny, color: T.coral),
-                label: s('today')),
+                icon: const Icon(Icons.theaters_outlined, color: T.faint),
+                selectedIcon: const Icon(Icons.theaters, color: T.gold),
+                label: s('club')),
             NavigationDestination(
                 icon: const Icon(Icons.auto_stories_outlined, color: T.faint),
-                selectedIcon: const Icon(Icons.auto_stories, color: T.coral),
+                selectedIcon: const Icon(Icons.auto_stories, color: T.gold),
                 label: s('library')),
             NavigationDestination(
-                icon: const Icon(Icons.videogame_asset_outlined, color: T.faint),
-                selectedIcon: const Icon(Icons.videogame_asset, color: T.coral),
-                label: s('games')),
-            NavigationDestination(
-                icon: const Icon(Icons.edit_note_outlined, color: T.faint),
-                selectedIcon: const Icon(Icons.edit_note, color: T.coral),
+                icon: const Icon(Icons.local_fire_department_outlined,
+                    color: T.faint),
+                selectedIcon:
+                    const Icon(Icons.local_fire_department, color: T.gold),
                 label: s('journal')),
             NavigationDestination(
                 icon: const Icon(Icons.person_outline, color: T.faint),
-                selectedIcon: const Icon(Icons.person, color: T.coral),
+                selectedIcon: const Icon(Icons.person, color: T.gold),
                 label: s('you')),
           ],
         ),

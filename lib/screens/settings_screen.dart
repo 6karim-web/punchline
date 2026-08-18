@@ -9,7 +9,7 @@ class SettingsSheet extends StatelessWidget {
 
   static Future<void> show(BuildContext context) => showModalBottomSheet(
         context: context,
-        backgroundColor: T.surface,
+        backgroundColor: T.panel,
         isScrollControlled: true,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(T.rSheet)),
@@ -48,7 +48,7 @@ class SettingsSheet extends StatelessWidget {
         padding: const EdgeInsetsDirectional.fromSTEB(T.s4, T.s2, T.s4, T.s2),
         child: Text(text,
             style: const TextStyle(
-                fontSize: 11, letterSpacing: 0.9, color: T.muted)),
+                fontSize: 11, letterSpacing: 0.9, color: T.dim)),
       );
 
   Widget _row({
@@ -60,13 +60,13 @@ class SettingsSheet extends StatelessWidget {
       ListTile(
         dense: true,
         title: Text(title,
-            style: const TextStyle(fontSize: 15, color: T.ink)),
+            style: const TextStyle(fontSize: 15, color: T.white)),
         subtitle: subtitle == null
             ? null
             : Text(subtitle,
                 style: const TextStyle(fontSize: 12, color: T.faint)),
         trailing: selected
-            ? const Icon(Icons.check, size: 18, color: T.coral)
+            ? const Icon(Icons.check, size: 18, color: T.wheel)
             : null,
         onTap: onTap,
       );

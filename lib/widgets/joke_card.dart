@@ -41,11 +41,7 @@ class _JokeCardState extends State<JokeCard> {
       onTap: () => setState(() => _open = !_open),
       child: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
-          color: T.tint(accent),
-          border: Border.all(color: accent.withValues(alpha: 0.28), width: 1),
-          borderRadius: BorderRadius.circular(T.rCard),
-        ),
+        decoration: T.lit(accent),
         padding: const EdgeInsets.all(T.s4 + 2),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,7 +51,7 @@ class _JokeCardState extends State<JokeCard> {
                 Expanded(
                   child: Text(
                     (widget.eyebrow ?? widget.joke.category).toUpperCase(),
-                    style: AppType.eyebrow(accent),
+                    style: AppType.tag(accent),
                   ),
                 ),
                 GestureDetector(
@@ -65,7 +61,7 @@ class _JokeCardState extends State<JokeCard> {
                     widget.onChanged?.call();
                   },
                   child: Icon(fav ? Icons.favorite : Icons.favorite_border,
-                      size: 19, color: fav ? T.rose : T.faint),
+                      size: 19, color: fav ? T.decoder : T.faint),
                 ),
               ],
             ),
@@ -103,7 +99,7 @@ class _JokeCardState extends State<JokeCard> {
         children: [
           const SizedBox(height: T.s4),
           Text(widget.joke.punchline,
-              style: AppType.punchline(color: T.ink, size: 19)),
+              style: AppType.punchline(color: T.white, size: 19)),
           const SizedBox(height: T.s5),
           Row(
             children: [

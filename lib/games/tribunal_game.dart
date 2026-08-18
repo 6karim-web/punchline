@@ -52,7 +52,7 @@ class _TribunalGameState extends State<TribunalGame> {
   Widget build(BuildContext context) {
     final s = S(AppState.instance.locale);
     final joke = _joke;
-    final accent = joke == null ? T.violet : T.forCategory(joke.category);
+    final accent = joke == null ? T.tribunal : T.forCategory(joke.category);
 
     return Scaffold(
       appBar: AppBar(
@@ -62,7 +62,7 @@ class _TribunalGameState extends State<TribunalGame> {
             padding: const EdgeInsetsDirectional.only(end: T.s4),
             child: Center(
               child: Text('${s('case')} $_round',
-                  style: AppType.number(color: T.muted, size: 14)),
+                  style: AppType.number(color: T.dim, size: 14)),
             ),
           ),
         ],
@@ -77,18 +77,13 @@ class _TribunalGameState extends State<TribunalGame> {
                     child: SingleChildScrollView(
                       child: Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: T.tint(accent),
-                          border: Border.all(
-                              color: accent.withValues(alpha: 0.28), width: 1),
-                          borderRadius: BorderRadius.circular(T.rCard),
-                        ),
+                        decoration: T.lit(accent),
                         padding: const EdgeInsets.all(T.s5),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(s('theAccused'),
-                                style: AppType.eyebrow(accent)),
+                                style: AppType.tag(accent)),
                             const SizedBox(height: T.s4),
                             Text(joke.setup,
                                 style: Theme.of(context).textTheme.bodyLarge),
@@ -117,13 +112,13 @@ class _TribunalGameState extends State<TribunalGame> {
                     Row(
                       children: [
                         Expanded(
-                          child: _wide(s('notGuilty'), T.muted,
+                          child: _wide(s('notGuilty'), T.dim,
                               () => _judge(false),
                               outlined: true),
                         ),
                         const SizedBox(width: T.s3),
                         Expanded(
-                          child: _wide(s('guilty'), T.mint, () => _judge(true)),
+                          child: _wide(s('guilty'), T.arena, () => _judge(true)),
                         ),
                       ],
                     )
@@ -146,13 +141,13 @@ class _TribunalGameState extends State<TribunalGame> {
         alignment: Alignment.center,
         padding: const EdgeInsets.symmetric(vertical: 15),
         decoration: BoxDecoration(
-          color: (_verdict! ? T.mint : T.muted).withValues(alpha: 0.14),
+          color: (_verdict! ? T.arena : T.dim).withValues(alpha: 0.14),
           borderRadius: BorderRadius.circular(T.rControl),
         ),
         child: Text(
           _verdict! ? s('convicted') : s('acquitted'),
           style: AppType.punchline(
-              color: _verdict! ? T.mint : T.muted, size: 17),
+              color: _verdict! ? T.arena : T.dim, size: 17),
         ),
       );
 
@@ -167,7 +162,7 @@ class _TribunalGameState extends State<TribunalGame> {
           decoration: BoxDecoration(
             color: outlined ? Colors.transparent : color,
             border: outlined
-                ? Border.all(color: T.border, width: 1)
+                ? Border.all(color: T.line, width: 1)
                 : null,
             borderRadius: BorderRadius.circular(T.rControl),
           ),
@@ -175,7 +170,7 @@ class _TribunalGameState extends State<TribunalGame> {
               style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w600,
-                  color: outlined ? T.muted : Colors.white)),
+                  color: outlined ? T.dim : Colors.white)),
         ),
       );
 }

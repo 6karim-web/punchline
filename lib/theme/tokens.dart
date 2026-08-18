@@ -1,45 +1,62 @@
 import 'package:flutter/material.dart';
 
-/// The single source of truth for every visual value. Nothing outside this
-/// file declares a raw colour.
+/// The club. Everything visual starts here; nothing outside declares a colour.
 ///
-/// The palette is warm paper rather than white, and the joy comes from the
-/// accents rather than from decoration: no gradients, no shadows, no glow.
-/// Elegance is what keeps cheerful from becoming childish — the colours are
-/// loud, everything around them is quiet.
+/// The app is a dark building you visit, and each room owns its light. That is
+/// why the palette is organised by ROOM rather than by generic accent — when
+/// you walk into the Tribunal it should feel violet, and the Arena green,
+/// before you have read a single word.
 class T {
   T._();
 
-  static const canvas = Color(0xFFFDF9F3); // warm paper, never pure white
-  static const surface = Color(0xFFFFFFFF);
-  static const raised = Color(0xFFFFFDFA);
-  static const border = Color(0xFFEDE4D8);
-  static const borderSoft = Color(0xFFF5EFE6);
+  // The building
+  static const night = Color(0xFF08070C);   // the dark outside every room
+  static const panel = Color(0xFF100E18);   // inputs, quiet surfaces
+  static const line = Color(0xFF241F38);    // hairlines
+  static const lineSoft = Color(0xFF17142270);
 
-  static const ink = Color(0xFF1C1917); // near-black, never pure black
-  static const muted = Color(0xFF7A716B);
-  static const faint = Color(0xFFA8A09A);
+  static const white = Color(0xFFF4F1FF);   // never pure white on near-black
+  static const dim = Color(0xFF8B849F);
+  static const faint = Color(0xFF5A5470);
 
-  // Six accents. Each category owns one, so the library reads as a colour
-  // wheel rather than a list — that variety IS the cheerfulness.
-  static const coral = Color(0xFFFF6B4A);
-  static const sun = Color(0xFFFFB800);
-  static const mint = Color(0xFF10C99B);
-  static const violet = Color(0xFF7B61FF);
-  static const sky = Color(0xFF3D9BFF);
-  static const rose = Color(0xFFFF5C8A);
+  /// Gold belongs to the club itself, never to a room: the wordmark, the
+  /// active tab, opening hours. It is what holds the building together.
+  static const gold = Color(0xFFFFC24B);
 
-  static const accents = <Color>[coral, sun, mint, violet, sky, rose];
+  // The rooms
+  static const tribunal = Color(0xFF8B5CF6);
+  static const arena = Color(0xFF10D9A0);
+  static const stage = Color(0xFFFF3B5C);
+  static const museum = Color(0xFF3B82F6);
+  static const wheel = Color(0xFFFF6B4A);
+  static const decoder = Color(0xFFFF5C8A);
 
-  /// Stable colour per category: the same joke always wears the same colour,
-  /// which is what makes the library feel organised rather than random.
+  static const rooms = <Color>[tribunal, arena, stage, museum, wheel, decoder];
+
+  /// Stable colour per joke category so the library reads as organised
+  /// rather than random — the same joke always wears the same colour.
   static Color forCategory(String category) =>
-      accents[category.hashCode.abs() % accents.length];
+      rooms[category.hashCode.abs() % rooms.length];
 
-  /// The pale wash behind a card. Low enough that ink stays readable.
-  static Color tint(Color c) => Color.alphaBlend(c.withValues(alpha: 0.09), canvas);
+  /// The glow that makes a room look lit from within. Two layers: a wash from
+  /// the top-left and a hotter spot top-right, which is what gives depth
+  /// without a single image file.
+  static BoxDecoration lit(Color room, {bool open = true}) => BoxDecoration(
+        borderRadius: BorderRadius.circular(rCard),
+        border: Border.all(
+            color: open ? room.withValues(alpha: 0.34) : line, width: 1),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: open
+              ? [
+                  Color.alphaBlend(room.withValues(alpha: 0.17), night),
+                  night,
+                ]
+              : [const Color(0xFF0E1018), night],
+        ),
+      );
 
-  // Spacing — six values, nothing else.
   static const s1 = 4.0;
   static const s2 = 8.0;
   static const s3 = 12.0;
@@ -47,9 +64,9 @@ class T {
   static const s5 = 24.0;
   static const s6 = 32.0;
 
-  static const rControl = 10.0;
+  static const rControl = 12.0;
   static const rCard = 16.0;
-  static const rSheet = 24.0;
+  static const rSheet = 26.0;
   static const rPill = 99.0;
 
   static const foldDuration = Duration(milliseconds: 260);

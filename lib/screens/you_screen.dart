@@ -19,42 +19,42 @@ class YouScreen extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.all(T.s4),
       children: [
-        Text(s('you'), style: AppType.display(T.ink, size: 30)),
+        Text(s('you'), style: AppType.display(T.white, size: 30)),
         const SizedBox(height: T.s5),
         Row(
           children: [
-            Expanded(child: _stat('${p.points}', s('points'), T.violet)),
+            Expanded(child: _stat('${p.points}', s('points'), T.tribunal)),
             const SizedBox(width: T.s3),
-            Expanded(child: _stat('${p.streak}', s('dayStreak'), T.coral)),
+            Expanded(child: _stat('${p.streak}', s('dayStreak'), T.wheel)),
           ],
         ),
         const SizedBox(height: T.s3),
         Row(
           children: [
-            Expanded(child: _stat('${p.laughsCaused}', s('laughs'), T.sun)),
+            Expanded(child: _stat('${p.laughsCaused}', s('laughs'), T.gold)),
             const SizedBox(width: T.s3),
-            Expanded(child: _stat('${p.verdicts.length}', s('judged'), T.mint)),
+            Expanded(child: _stat('${p.verdicts.length}', s('judged'), T.arena)),
           ],
         ),
         const SizedBox(height: T.s3),
         Row(
           children: [
             Expanded(
-                child: _stat('${p.favourites.length}', s('favourites'), T.rose)),
+                child: _stat('${p.favourites.length}', s('favourites'), T.decoder)),
             const SizedBox(width: T.s3),
             Expanded(
-                child: _stat('${p.written.length}', s('written'), T.sky)),
+                child: _stat('${p.written.length}', s('written'), T.museum)),
           ],
         ),
         if (p.written.isNotEmpty) ...[
           const SizedBox(height: T.s5),
-          Text(s('yourPunchlines'), style: AppType.eyebrow(T.faint)),
+          Text(s('yourPunchlines'), style: AppType.tag(T.faint)),
           const SizedBox(height: T.s2),
           for (final entry in p.written.entries.toList().reversed.take(20))
             _written(entry.key, entry.value),
         ],
         const SizedBox(height: T.s5),
-        Text(s('support'), style: AppType.eyebrow(T.faint)),
+        Text(s('support'), style: AppType.tag(T.faint)),
         const SizedBox(height: T.s2),
         _link(Icons.music_note_outlined, s('followTikTok'),
             () => _open('https://www.tiktok.com/')),
@@ -75,17 +75,13 @@ class YouScreen extends StatelessWidget {
   }
 
   Widget _stat(String value, String label, Color color) => Container(
-        decoration: BoxDecoration(
-          color: T.tint(color),
-          border: Border.all(color: color.withValues(alpha: 0.25), width: 1),
-          borderRadius: BorderRadius.circular(T.rCard),
-        ),
+        decoration: T.lit(color),
         padding: const EdgeInsets.symmetric(vertical: T.s4),
         child: Column(
           children: [
             Text(value, style: AppType.number(color: color, size: 24)),
             const SizedBox(height: 2),
-            Text(label, style: const TextStyle(fontSize: 12, color: T.muted)),
+            Text(label, style: const TextStyle(fontSize: 12, color: T.dim)),
           ],
         ),
       );
@@ -97,8 +93,8 @@ class YouScreen extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: T.s2),
       padding: const EdgeInsets.all(T.s4),
       decoration: BoxDecoration(
-        color: T.surface,
-        border: Border.all(color: T.border, width: 1),
+        color: T.panel,
+        border: Border.all(color: T.line, width: 1),
         borderRadius: BorderRadius.circular(T.rCard),
       ),
       child: Column(
@@ -108,7 +104,7 @@ class YouScreen extends StatelessWidget {
             Text(joke.setup,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: const TextStyle(fontSize: 13, color: T.muted)),
+                style: const TextStyle(fontSize: 13, color: T.dim)),
             const SizedBox(height: 6),
           ],
           Text(text, style: AppType.punchline(size: 16)),
@@ -122,15 +118,15 @@ class YouScreen extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 15),
           decoration: const BoxDecoration(
-            border: Border(bottom: BorderSide(color: T.border, width: 1)),
+            border: Border(bottom: BorderSide(color: T.line, width: 1)),
           ),
           child: Row(
             children: [
-              Icon(icon, size: 19, color: T.muted),
+              Icon(icon, size: 19, color: T.dim),
               const SizedBox(width: T.s3),
               Expanded(
                 child: Text(label,
-                    style: const TextStyle(fontSize: 15, color: T.ink)),
+                    style: const TextStyle(fontSize: 15, color: T.white)),
               ),
               const Icon(Icons.chevron_right, size: 18, color: T.faint),
             ],

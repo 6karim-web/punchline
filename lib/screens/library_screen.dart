@@ -62,7 +62,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
           child: TextField(
             controller: _search,
             onChanged: (_) => setState(() {}),
-            style: const TextStyle(fontSize: 15, color: T.ink),
+            style: const TextStyle(fontSize: 15, color: T.white),
             decoration: InputDecoration(
               hintText: s('searchJokes'),
               hintStyle: const TextStyle(fontSize: 15, color: T.faint),
@@ -74,11 +74,11 @@ class _LibraryScreenState extends State<LibraryScreen> {
                       onPressed: () => setState(() => _search.clear()),
                     ),
               filled: true,
-              fillColor: T.surface,
+              fillColor: T.panel,
               contentPadding: const EdgeInsets.symmetric(vertical: 4),
-              border: _outline(T.border),
-              enabledBorder: _outline(T.border),
-              focusedBorder: _outline(T.coral),
+              border: _outline(T.line),
+              enabledBorder: _outline(T.line),
+              focusedBorder: _outline(T.wheel),
             ),
           ),
         ),
@@ -91,7 +91,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
               _chip(
                 label: s('favourites'),
                 selected: _favouritesOnly,
-                color: T.rose,
+                color: T.decoder,
                 onTap: () =>
                     setState(() => _favouritesOnly = !_favouritesOnly),
               ),
@@ -99,7 +99,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                 _chip(
                   label: c == 'all' ? s('all') : (_labels[c] ?? c),
                   selected: _category == c,
-                  color: c == 'all' ? T.ink : T.forCategory(c),
+                  color: c == 'all' ? T.white : T.forCategory(c),
                   onTap: () => setState(() => _category = c),
                 ),
             ],
@@ -111,15 +111,15 @@ class _LibraryScreenState extends State<LibraryScreen> {
             children: [
               Expanded(
                 child: Text('${results.length} ${s('punchlines')}',
-                    style: const TextStyle(fontSize: 12.5, color: T.muted)),
+                    style: const TextStyle(fontSize: 12.5, color: T.dim)),
               ),
               Text(s('adult'),
-                  style: const TextStyle(fontSize: 12.5, color: T.muted)),
+                  style: const TextStyle(fontSize: 12.5, color: T.dim)),
               Switch(
                 value: _allowAdult,
                 onChanged: (v) => setState(() => _allowAdult = v),
                 activeThumbColor: Colors.white,
-                activeTrackColor: T.coral,
+                activeTrackColor: T.wheel,
               ),
             ],
           ),
@@ -138,7 +138,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                         Text(s('tryAnother'),
                             textAlign: TextAlign.center,
                             style:
-                                const TextStyle(fontSize: 14, color: T.muted)),
+                                const TextStyle(fontSize: 14, color: T.dim)),
                       ],
                     ),
                   ),
@@ -179,16 +179,16 @@ class _LibraryScreenState extends State<LibraryScreen> {
             alignment: Alignment.center,
             padding: const EdgeInsets.symmetric(horizontal: T.s3 + 2),
             decoration: BoxDecoration(
-              color: selected ? color : T.surface,
+              color: selected ? color : T.panel,
               border: Border.all(
-                  color: selected ? color : T.border, width: 1),
+                  color: selected ? color : T.line, width: 1),
               borderRadius: BorderRadius.circular(T.rPill),
             ),
             child: Text(label,
                 style: TextStyle(
                     fontSize: 13,
                     fontWeight: selected ? FontWeight.w600 : FontWeight.w400,
-                    color: selected ? Colors.white : T.muted)),
+                    color: selected ? Colors.white : T.dim)),
           ),
         ),
       );
