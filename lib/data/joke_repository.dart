@@ -41,7 +41,6 @@ class JokeRepository {
               adult: e['adult'] as bool,
             ))
         .toList();
-    _loaded = true;
   }
 
   List<String> get categories {
