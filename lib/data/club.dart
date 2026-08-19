@@ -95,6 +95,7 @@ class Club {
       opensAt: 12,
       closesAt: 23,
       weekdays: {1, 2, 3, 4, 5, 6, 7},
+      built: true,
     ),
     Room(
       id: 'decoder',
@@ -105,6 +106,7 @@ class Club {
       opensAt: 8,
       closesAt: 22,
       weekdays: {1, 2, 3, 4, 5, 6, 7},
+      built: true,
     ),
     Room(
       id: 'museum',
@@ -115,6 +117,7 @@ class Club {
       opensAt: 9,
       closesAt: 18,
       weekdays: {2, 3, 4, 5, 6, 7},
+      built: true,
     ),
   ];
 

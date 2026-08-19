@@ -1,0 +1,1682 @@
+[
+{
+"id": "f001",
+"title": "Intérêts",
+"setup": "Ma copine m'avait emprunté 100 euros. Trois ans plus tard, quand on s'est séparés, elle m'a rendu exactement 100 euros.",
+"punchline": "J'avais perdu tout intérêt dans cette relation.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f002",
+"title": "Le détecteur",
+"setup": "Un père ramène un robot détecteur de mensonges. Son fils rentre avec deux heures de retard. « Tu étais où ? » « À la bibliothèque. » Le robot le gifle. « Bon, chez un copain, on regardait un film. » « Quel film ? » « Bambi. » Le robot le gifle encore. « D'accord, un film pour adultes ! » Le père explose : « À ton âge ! Moi, jamais je n'aurais osé ! »",
+"punchline": "Le robot gifle le père.",
+"category": "kids",
+"adult": false
+},
+{
+"id": "f003",
+"title": "Les escargots",
+"setup": "Une femme prépare un dîner pour ses parents et envoie son mari acheter des escargots frais. Il les achète, puis passe au bar. Un verre en amène un autre. Quand il ressort, il est vingt-et-une heures. Pris de panique, il monte l'escalier, renverse le sac devant la porte et sonne.",
+"punchline": "Il se penche vers les escargots : « Allez les gars ! On y est presque ! »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f004",
+"title": "Après soixante-sept ans",
+"setup": "Un couple de quatre-vingt-dix ans demande le divorce après soixante-sept ans de mariage. Le juge, stupéfait, demande pourquoi maintenant.",
+"punchline": "« On ne voulait pas traumatiser les enfants. On a attendu qu'ils meurent. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f005",
+"title": "Le chat",
+"setup": "Un homme ne supporte pas le chat de sa femme. Il l'emmène à trente kilomètres et l'abandonne. En rentrant, le chat l'attend sur le perron. Il recommence à soixante. Le chat revient. Furieux, il roule dix kilomètres au nord, vingt au sud, quinze à l'ouest, quarante à l'est, largue le chat, puis appelle sa femme. « Le chat est là ? » « Oui, il vient de rentrer. »",
+"punchline": "« Passe-le-moi. Je suis perdu. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f006",
+"title": "Une tête de quoi",
+"setup": "Un mari remarque un robinet qui fuit et réveille sa femme. « Tu peux réparer ? » « J'ai une tête de plombier ? Appelle-en un. » Il montre la pelouse en friche. « Et l'herbe ? » « J'ai une tête de jardinier ? » Le soir, il rentre : robinet réparé, pelouse tondue. « Comment tu as fait ? » « Le voisin s'en est chargé. Il m'a laissé le choix : soit je couchais avec lui, soit je lui faisais un gâteau. »",
+"punchline": "« Et tu as fait quel gâteau ? » « J'ai une tête de pâtissière ? »",
+"category": "marriage",
+"adult": true
+},
+{
+"id": "f007",
+"title": "Qui c'est Bob",
+"setup": "Pour l'anniversaire de son mari, une femme se fait tatouer un grand B sur chaque fesse. Le soir, elle se retourne et lui montre fièrement.",
+"punchline": "Il regarde un moment et demande : « C'est qui, Bob ? »",
+"category": "marriage",
+"adult": true
+},
+{
+"id": "f008",
+"title": "La dernière nuit",
+"setup": "Un homme est sur son lit de mort. Sa femme se penche : « Chéri, puisque c'est ta dernière nuit, on pourrait le faire une dernière fois ? » Il refuse doucement : « À quoi bon, je serai mort demain matin. »",
+"punchline": "Elle se retourne : « Justement. Moi, je dois me lever. »",
+"category": "marriage",
+"adult": true
+},
+{
+"id": "f009",
+"title": "Les deux maris",
+"setup": "Deux hommes se percutent avec leur caddie au supermarché. Tous les deux ont perdu leur femme. « La mienne est grande, blonde, yeux bleus, robe noire moulante, poitrine incroyable. Et la vôtre ? »",
+"punchline": "« Laissez tomber la mienne. Cherchons la vôtre. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f010",
+"title": "Dis-moi un truc gentil",
+"setup": "Une femme se regarde dans le miroir. « Je suis vieille, grosse, ridée, pleine de cellulite. S'il te plaît, dis-moi quelque chose de gentil. »",
+"punchline": "Son mari répond : « Tu as une vue excellente. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f011",
+"title": "Le perroquet",
+"setup": "Un homme achète un perroquet sans pattes, qui se tient à son perchoir avec le bec. Un jour l'oiseau lui dit : « Ta femme et le facteur sont montés ensemble pendant une heure. » « Et ensuite ? »",
+"punchline": "« Aucune idée. Tu as acheté l'oiseau sans pattes. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f012",
+"title": "Recalcul",
+"setup": "En pleine dispute dans la voiture, le GPS annonce : « Recalcul de l'itinéraire. »",
+"punchline": "Ma femme : « Enfin quelqu'un dans cette voiture qui admet s'être trompé. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f013",
+"title": "L'homme parfait",
+"setup": "Ma femme se réveille en souriant et me raconte qu'elle a rêvé de l'homme parfait. Je demande : « J'étais dedans ? »",
+"punchline": "« Oui. Tu tenais son manteau. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f014",
+"title": "Le mot de passe",
+"setup": "Ma femme a changé le mot de passe du wifi pour la date de notre anniversaire de mariage.",
+"punchline": "Résultat : plus personne n'a internet, et aucun de nous deux n'ose demander.",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f015",
+"title": "Renouveler les vœux",
+"setup": "Pour nos vingt ans de mariage, ma femme a proposé qu'on renouvelle nos vœux. J'ai demandé : « On peut renégocier les clauses ? »",
+"punchline": "La cérémonie est reportée à une date indéterminée.",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f016",
+"title": "Quelque chose de sexy",
+"setup": "Ma femme m'envoie un message : « Ramène quelque chose de sexy pour ce soir. » Je suis rentré avec du fromage et une bonne bouteille.",
+"punchline": "On est toujours mariés, ce qui prouve que j'avais bien compris la consigne.",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f017",
+"title": "La bague",
+"setup": "Un homme achète une bague de fiançailles. « Et si elle dit non ? » « Vous avez trente jours pour la rendre. » « Parfait. Et si elle dit oui ? »",
+"punchline": "Le bijoutier baisse la voix : « Là, vous êtes seul. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f018",
+"title": "Relation sérieuse",
+"setup": "Une femme demande à son rendez-vous : « Tu cherches quelque chose de sérieux ? » « Absolument. » « Qu'est-ce qui te rend prêt ? »",
+"punchline": "« Mon propriétaire a interdit les invités la nuit. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f019",
+"title": "Le golfeur",
+"setup": "Un golfeur s'arrête en plein parcours, retire sa casquette et baisse la tête au passage d'un convoi funéraire. Son ami lui dit : « C'était vraiment respectueux de ta part. » Le golfeur hoche la tête.",
+"punchline": "« C'était la moindre des choses. On a été mariés trente-cinq ans. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f020",
+"title": "La machine à douleur",
+"setup": "Pendant l'accouchement, un couple teste une machine qui transfère la douleur de la mère au père. Le médecin monte à cent pour cent : le mari ne sent rien.",
+"punchline": "En rentrant, ils trouvent le facteur mort sur le paillasson.",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f021",
+"title": "Se remarier",
+"setup": "Un mari demande à sa femme si elle se remarierait s'il mourait. « Probablement, dit-elle, mais pas avec quelqu'un comme toi. »",
+"punchline": "« Je crois à la diversité. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f022",
+"title": "L'hôtel",
+"setup": "Un homme de cinquante-quatre ans laisse un mot à sa femme : il passe la soirée à l'hôtel avec sa secrétaire de dix-huit ans, il sera rentré avant minuit. En arrivant chez lui, il trouve un mot sur la table.",
+"punchline": "« Cher mari, j'ai également cinquante-quatre ans. Je suis à l'hôtel avec mon prof de tennis de dix-huit ans. Avec ton diplôme de maths, tu comprendras que dix-huit va dans cinquante-quatre plus de fois que cinquante-quatre ne va dans dix-huit. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f023",
+"title": "L'auto-stoppeuse",
+"setup": "Un automobiliste prend une auto-stoppeuse en minijupe. En passant les vitesses, sa main frôle sa cuisse. Elle sourit : « Vous savez, vous pouvez aller plus loin. »",
+"punchline": "Il l'a déposée à Marseille.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f024",
+"title": "Garde la maison",
+"setup": "Pendant le divorce, ma femme m'a dit : « Tu peux garder la maison. »",
+"punchline": "J'étais touché, jusqu'à ce que son avocat précise : « Elle garde le crédit, la valeur et l'adresse. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f025",
+"title": "Trente-cinq ans plus tard",
+"setup": "Après trente-cinq ans de mariage, un homme dit à sa femme : « Il y a trente-cinq ans, on avait un petit studio, une vieille voiture, un canapé défoncé et une télé minuscule. Mais je dormais avec une blonde de vingt-cinq ans. Maintenant j'ai une belle maison, une grosse voiture, un grand lit et un écran géant, mais je dors avec une femme de soixante ans. »",
+"punchline": "Sa femme sourit : « Trouve-toi une blonde de vingt-cinq ans. Mon avocat s'assurera que tu récupères le studio, la vieille voiture, le canapé défoncé et la petite télé. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f026",
+"title": "La veuve",
+"setup": "Comment appelle-t-on une femme qui sait toujours exactement où se trouve son mari ?",
+"punchline": "Une veuve.",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f027",
+"title": "Trop saoul",
+"setup": "Un homme rentre complètement ivre. À sa grande surprise, sa femme l'aide gentiment à se coucher. Le lendemain matin, il demande pourquoi elle n'était pas furieuse.",
+"punchline": "« Parce que quand j'ai essayé de te déshabiller, tu m'as repoussée en disant : reculez madame, je suis marié. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f028",
+"title": "Le dîner d'anniversaire",
+"setup": "Ma copine m'a demandé si je connaissais la différence entre un dîner d'anniversaire et cinq minutes au lit. J'ai dit non.",
+"punchline": "Elle a répondu : « Alors joyeux anniversaire. »",
+"category": "marriage",
+"adult": true
+},
+{
+"id": "f029",
+"title": "Les mites",
+"setup": "Un mari entend du bruit dans le placard de la chambre. Il ouvre : un homme entièrement nu se tient là. « Qu'est-ce que vous faites ? » « Je chasse les mites. » « Tout nu ? »",
+"punchline": "L'homme baisse les yeux sur lui-même et s'exclame : « Les salopes ! Elles ont tout mangé ! »",
+"category": "marriage",
+"adult": true
+},
+{
+"id": "f030",
+"title": "Cent deux euros cinquante",
+"setup": "Un couple de retraités est complètement ruiné. Le mari finit par dire : « Il ne reste qu'une solution. Tu vas devoir faire le trottoir ce soir. » Le lendemain matin, sa femme rentre avec cent deux euros cinquante. « Cent deux euros cinquante ? Quel radin a donné deux euros cinquante ? »",
+"punchline": "« Tous. »",
+"category": "marriage",
+"adult": true
+},
+{
+"id": "f031",
+"title": "L'assistant vocal",
+"setup": "Un mari rentre plus tôt que prévu et demande à l'enceinte connectée : « Y a-t-il quelqu'un dans la chambre ? »",
+"punchline": "L'enceinte répond : « Je détecte trois appareils, deux rythmes cardiaques et un mari qui devrait rester au rez-de-chaussée. »",
+"category": "tech",
+"adult": true
+},
+{
+"id": "f032",
+"title": "La clé du paradis",
+"setup": "Le petit Marc demande à son père : « Papa, c'est quoi entre les jambes de maman ? » « C'est la porte du paradis, mon fils. » « Et entre les tiennes ? » « C'est la clé qui ouvre la porte du paradis. »",
+"punchline": "Marc réfléchit. « Alors tu devrais changer la serrure. Le voisin a un double. »",
+"category": "kids",
+"adult": true
+},
+{
+"id": "f033",
+"title": "Le musée",
+"setup": "Au musée, un visiteur demande l'âge du squelette de dinosaure. « Six millions d'années, cinq mois et trois jours. » « Comment pouvez-vous être aussi précis ? »",
+"punchline": "« Quand j'ai commencé ici il y a cinq mois et trois jours, on m'a dit qu'il avait six millions d'années. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f034",
+"title": "L'entretien de départ",
+"setup": "Aux ressources humaines, on me demande pourquoi je pars. Je réponds : « Pour une entreprise qui valorise l'honnêteté. » On me dit : « Mais nous valorisons l'honnêteté. »",
+"punchline": "J'ai répondu : « Non. Vous valorisez les entretiens de départ. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f035",
+"title": "Congés illimités",
+"setup": "Mon entreprise propose des congés illimités.",
+"punchline": "Vous pouvez prendre autant de temps que vous voulez entre le moment où on vous licencie et celui où vous retrouvez un poste.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f036",
+"title": "Le flamant rose",
+"setup": "Ma femme m'a demandé d'arrêter d'imiter un flamant rose.",
+"punchline": "J'ai dû mettre le pied à terre.",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f037",
+"title": "Trois entreprises",
+"setup": "J'ai dit à mon patron que trois entreprises me couraient après. Il m'a demandé lesquelles.",
+"punchline": "J'ai répondu : le gaz, l'eau et l'électricité.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f038",
+"title": "La barbe",
+"setup": "Avant, je détestais les barbes.",
+"punchline": "Et puis ça a poussé sur moi.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f039",
+"title": "Le costume",
+"setup": "Mon patron m'a dit de m'habiller pour le poste que je veux.",
+"punchline": "Il n'a pas aimé me voir arriver en pyjama.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f040",
+"title": "Le prêt",
+"setup": "La banque a refusé mon prêt. Le conseiller m'a expliqué que mon dossier manquait de garanties.",
+"punchline": "Je lui ai proposé ma parole. Il m'a proposé la sortie.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f041",
+"title": "Les dinosaures",
+"setup": "Un enfant demande à son grand-père s'il a connu les dinosaures. « Presque. »",
+"punchline": "« J'ai connu le modem 56k. »",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f042",
+"title": "La demande en mariage",
+"setup": "Un homme demande la main de sa fiancée à ses parents. Pendant la conversation, il allume une cigarette. « Vous fumez ? » « Seulement quand je bois. » « Vous buvez aussi ? » « Uniquement au casino. »",
+"punchline": "Les parents se lèvent d'un bond : « Félicitations, elle est à vous ! »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f043",
+"title": "Le plongeur",
+"setup": "Un plongeur à quinze mètres aperçoit un homme à côté de lui, sans bouteille. Il descend à vingt mètres, l'homme le suit. À trente mètres, il est toujours là. Intrigué, le plongeur écrit sur son ardoise : « Comment faites-vous pour rester si longtemps sans air ? »",
+"punchline": "L'homme attrape l'ardoise et écrit : « JE ME NOIE, ESPÈCE D'IDIOT ! »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f044",
+"title": "La cellule",
+"setup": "Une cellule nerveuse arrive dans la tête d'un homme et trouve les lieux entièrement vides. « Ouah, c'est immense ici. Je vais devoir tout faire tout seul ? »",
+"punchline": "Une voix lointaine lui répond : « Hé, le nouveau ! Descends au sous-sol, tout le monde est là ! »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f045",
+"title": "J'ai arrêté",
+"setup": "« Mon médecin m'a dit que si je n'arrêtais pas de boire, je ne pourrais plus travailler. Alors j'ai arrêté. » « De boire ? »",
+"punchline": "« Non. De travailler. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f046",
+"title": "Les sinus",
+"setup": "Une vieille dame consulte : « Docteur, je n'arrête pas d'avoir des gaz. Ils sont silencieux et sans odeur, mais j'en ai lâché vingt depuis que je suis entrée. » Le médecin lui donne un traitement et la revoit une semaine plus tard. « C'est pire ! Maintenant ça sent horriblement mauvais. »",
+"punchline": "Le médecin sourit : « Parfait, les sinus sont débouchés. On va pouvoir s'occuper de votre audition. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f047",
+"title": "Six heures cinq",
+"setup": "Un homme arrive au cabinet avec un couteau planté dans le dos. « Docteur, aidez-moi ! » « Désolé, il est six heures cinq et je ferme à six heures. » « Vous ne pouvez pas me laisser comme ça ! »",
+"punchline": "« Allez voir mon confrère en face. Lui ferme à sept heures. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f048",
+"title": "Le sauveteur",
+"setup": "Dans un hôpital psychiatrique, un patient tombe dans la piscine. Un autre plonge et le sauve. Le lendemain, le directeur félicite le héros : « Votre acte prouve que vous êtes guéri, vous pouvez sortir. Une mauvaise nouvelle cependant : celui que vous avez sauvé s'est pendu ce matin dans sa chambre. »",
+"punchline": "Le patient répond : « Il ne s'est pas pendu. C'est moi qui l'avais mis à sécher. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f049",
+"title": "Vie active",
+"setup": "Mon médecin m'a demandé à quelle fréquence je faisais du sport. J'ai répondu : « Tous les jours. Je saute sur les occasions, je cours après le temps et je tire des conclusions. »",
+"punchline": "Il a écrit : « Mode de vie actif. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f050",
+"title": "Le sous-vêtement",
+"setup": "Le médecin réclame un échantillon d'urine, un de selles et un prélèvement sanguin.",
+"punchline": "Le patient répond : « Pour gagner du temps, docteur, je vous laisse mon caleçon. »",
+"category": "medical",
+"adult": true
+},
+{
+"id": "f051",
+"title": "Trois heures du matin",
+"setup": "À trois heures du matin, un couple appelle le médecin en panique : « Docteur, notre bébé vient d'avaler un préservatif ! » Le médecin s'habille en vitesse et se précipite vers la porte. Le téléphone sonne à nouveau.",
+"punchline": "« Laissez tomber, docteur. On en a retrouvé un autre. »",
+"category": "medical",
+"adult": true
+},
+{
+"id": "f052",
+"title": "Le café",
+"setup": "Un homme raconte à son médecin que chaque jour il surprend sa femme avec un amant différent. Chaque fois, il renonce à tuer tout le monde, range son arme, se fait un café et réfléchit.",
+"punchline": "« Ce n'est pas ça qui m'inquiète, docteur. Tous ces petits cafés, c'est mauvais pour la santé ? »",
+"category": "marriage",
+"adult": true
+},
+{
+"id": "f053",
+"title": "Les écrous",
+"setup": "Un automobiliste crève devant un hôpital psychiatrique et perd les écrous de sa roue. Un patient qui observe depuis le mur lui lance : « Prenez un écrou sur chacune des trois autres roues. Vous en aurez trois par roue, largement assez pour rejoindre un garage. » L'automobiliste, stupéfait : « C'est brillant. Qu'est-ce que vous faites ici ? »",
+"punchline": "Le patient hausse les épaules : « Je suis fou, pas stupide. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f054",
+"title": "Le livreur",
+"setup": "Un patron traverse ses bureaux et voit un homme assis sur un canapé, en train de scroller sur son téléphone. « Qu'est-ce que vous faites ? » « J'attends d'être payé. » Furieux, le patron demande son salaire, lui tend l'argent et le met dehors. Puis il se tourne vers son équipe : « Il travaillait pour qui, celui-là ? »",
+"punchline": "« Le livreur de pizzas. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f055",
+"title": "La banque",
+"setup": "Un homme entre dans une banque et lance à la guichetière : « Écoute, appelle-moi le crétin qui dirige ce trou. » Elle proteste, il insiste : « Tais-toi et va le chercher. » Le directeur arrive et lui explique qu'il vient d'hériter de deux millions d'euros et souhaite ouvrir un compte.",
+"punchline": "Le directeur se tourne aussitôt vers la guichetière : « Je vois. Cette idiote vous embête ? »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f056",
+"title": "L'armoire",
+"setup": "Une femme passe quatre heures à monter une armoire en kit. Un bus passe dans la rue pavée, l'appartement tremble, l'armoire s'effondre. Elle la remonte : un autre bus passe, elle s'effondre encore. Elle appelle le service après-vente. Le technicien monte l'armoire, s'installe à l'intérieur et attend pour comprendre. Le mari rentre, ouvre l'armoire et découvre un inconnu debout dedans.",
+"punchline": "Le technicien lève les yeux : « Vous n'allez pas me croire, mais j'attends le bus. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f057",
+"title": "Les trois ingénieurs",
+"setup": "Trois informaticiens se retrouvent devant les lavabos des toilettes. Le premier utilise trois litres d'eau, la moitié du savon et une pile de serviettes. « Chez Windows, on fait les choses à fond. » Le deuxième se rince rapidement les doigts. « Chez Apple, on optimise. » Le troisième sort sans se laver les mains.",
+"punchline": "« Chez Linux, on ne se pisse pas sur les doigts. »",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f058",
+"title": "Le câble",
+"setup": "Des archéologues russes creusent à cent mètres et trouvent un câble de cuivre millénaire. Ils annoncent que les anciens Russes avaient déjà le télégraphe. Les Américains creusent à deux cents mètres, trouvent de la fibre optique et annoncent le téléphone. Les Belges creusent à trois cents mètres et ne trouvent absolument rien.",
+"punchline": "Ils annoncent fièrement que les anciens Belges avaient déjà le wifi.",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f059",
+"title": "Le cordonnier",
+"setup": "Un homme revient dans son quartier après quarante-cinq ans à l'étranger. Il retrouve la minuscule cordonnerie qu'il fréquentait avant de partir, fouille son portefeuille et tombe sur un vieux ticket. Amusé, il le tend au cordonnier, qui a bien vieilli. Celui-ci l'examine longuement.",
+"punchline": "Il disparaît dans l'arrière-boutique, revient et annonce : « Ce sera prêt jeudi. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f060",
+"title": "Le contrôle fiscal",
+"setup": "Pendant un contrôle, l'inspecteur s'étonne : « Vous déclarez mille huit cents euros par mois. Comment expliquez-vous votre villa sur la côte, votre appartement à Paris et votre propriété dans le Sud ? » L'homme répond : « J'ai un secret : je joue aux courses. » « Vous gagnez souvent ? » « Jamais. » « Alors comment ? »",
+"punchline": "« Eh bien voilà : ma villa sur la côte, mon appartement à Paris et ma propriété dans le Sud. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f061",
+"title": "Le whisky gratuit",
+"setup": "Un barman demande à un client : « Qu'est-ce que vous prenez ? » « Un whisky. » Après l'avoir bu, le client refuse de payer : « Vous m'avez demandé ce que je prenais, j'ai cru que vous offriez. » Le barman, agacé, lui demande ce qu'il fait dans la vie.",
+"punchline": "Le client sourit : « Essentiellement du whisky gratuit. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f062",
+"title": "Le château",
+"setup": "Une équipe de tournage n'a qu'une seule prise pour faire exploser un château. Cinquante caméras sont réparties autour du décor. Le réalisateur crie « Action », le château explose magnifiquement. Il appelle les caméras une par une : bourrage, batterie vide, objectif sale, cadre raté. Il arrive à la cinquantième, désespéré.",
+"punchline": "Le cadreur sourit : « Je suis prêt quand vous voulez. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f063",
+"title": "Le mouton",
+"setup": "Un ingénieur, un physicien et un mathématicien doivent clôturer un troupeau de moutons avec le moins de matériau possible. L'ingénieur regroupe les bêtes en cercle et pose une clôture ronde. Le physicien démontre qu'un carré serait plus efficace.",
+"punchline": "Le mathématicien construit une minuscule clôture autour de lui-même et déclare : « Je me définis comme étant à l'extérieur. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f064",
+"title": "La maison vide",
+"setup": "Un physicien, un biologiste et un mathématicien observent deux personnes entrer dans une maison. Cinq minutes plus tard, trois personnes en sortent. Le physicien dit : « La mesure initiale était imprécise. » Le biologiste dit : « Elles se sont reproduites. »",
+"punchline": "Le mathématicien dit : « Si une personne entre maintenant, la maison sera vide. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f065",
+"title": "Le feu rouge",
+"setup": "Un policier arrête un automobiliste. « Vous n'avez pas vu le feu rouge ? »",
+"punchline": "« Le feu, si. Vous, non. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f066",
+"title": "Le beau-frère",
+"setup": "Un chauffeur de taxi grille trois feux rouges. À chaque fois, son passager proteste et il répond : « Ne vous inquiétez pas, mon beau-frère fait pareil tous les jours. » Au quatrième carrefour, le feu est vert et le chauffeur pile net.",
+"punchline": "« Mon beau-frère arrive peut-être en face. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f067",
+"title": "Les bottes",
+"setup": "Une institutrice se bat dix minutes pour enfiler les bottes d'un enfant. « Elles sont à l'envers », dit-il. Elle recommence. « Ce ne sont pas mes bottes. » Elle les retire, épuisée. « Ce sont celles de mon frère, maman m'a dit de les mettre. » Elle les remet, à bout de forces, et demande où sont ses gants.",
+"punchline": "« Dans mes bottes. »",
+"category": "kids",
+"adult": false
+},
+{
+"id": "f068",
+"title": "Le mot sur le pare-brise",
+"setup": "Un homme retrouve sa voiture emboutie sur un parking. Un mot est glissé sous l'essuie-glace.",
+"punchline": "« J'ai heurté votre voiture. Tout le monde me regarde et pense que je laisse mes coordonnées. Ce n'est pas le cas. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f069",
+"title": "L'hôtel trop bas",
+"setup": "Un voyageur demande les tarifs d'un hôtel. « Mille euros au premier étage, huit cents au deuxième, six cents au troisième. » Le voyageur remercie et s'en va. Le réceptionniste le rattrape : « L'hôtel ne vous plaît pas ? »",
+"punchline": "« Si. Mais votre hôtel n'est pas assez haut pour mon budget. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f070",
+"title": "Cinq euros de l'heure",
+"setup": "Un homme cherche des cours de grammaire française. Tous les professeurs demandent cinquante euros de l'heure, sauf une annonce : GRAMMAIRE PARFAITE — 5 EUROS DE L'HEURE. Il se rend à l'adresse et frappe. « C'est bien ici, les cours de grammaire ? »",
+"punchline": "Une voix répond de l'intérieur : « Oui. Vous êtes au bon endroit, que je sache-t-il. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f071",
+"title": "Les deux whiskys",
+"setup": "Chaque jour, un homme commande deux whiskys dans le même bar. Il explique : « Mon meilleur ami et moi buvions toujours ensemble à l'armée. On s'est perdus de vue, alors j'en bois un pour lui. » Un matin, il n'en commande qu'un. Le barman, gêné, lui présente ses condoléances.",
+"punchline": "« Non non, il va très bien. C'est moi qui ai arrêté de boire. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f072",
+"title": "L'entretien d'embauche",
+"setup": "En entretien, un ancien militaire explique qu'une mine lui a coûté ses deux testicules. Le responsable l'embauche et précise : « Les horaires sont huit heures — seize heures, mais vous pouvez arriver à dix heures. » L'homme s'étonne d'un tel traitement de faveur.",
+"punchline": "« Ce n'est pas une faveur. Ici, tout le monde passe de huit à dix à se gratter les couilles. »",
+"category": "work",
+"adult": true
+},
+{
+"id": "f073",
+"title": "La fermeture éclair",
+"setup": "Une femme en jupe très serrée n'arrive pas à monter dans le bus. Discrètement, elle baisse la fermeture éclair derrière elle, réessaie, puis la baisse encore. Un homme derrière elle la soulève d'un coup et la dépose dans le bus. Furieuse, elle le gifle. Il proteste, vexé.",
+"punchline": "« Vous m'avez quand même ouvert la braguette deux fois. Je pensais qu'on se connaissait assez. »",
+"category": "misc",
+"adult": true
+},
+{
+"id": "f074",
+"title": "Les poissons",
+"setup": "Un garde-pêche surprend un homme avec un seau plein de poissons. « Ce sont mes animaux de compagnie. Chaque soir je les laisse nager, je siffle et ils reviennent. » Le garde, sceptique, lui demande de le prouver. L'homme vide le seau dans la rivière. « Alors, sifflez. »",
+"punchline": "« Siffler pour quoi ? »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f075",
+"title": "Le ragoût",
+"setup": "Une femme se croit devenue sourde. Depuis le salon, elle demande à sa cuisinière ce qu'elle prépare. Pas de réponse. Elle répète depuis le couloir, puis depuis la porte de la cuisine, puis juste derrière elle.",
+"punchline": "« Du ragoût. C'est la quatrième fois que je vous le dis. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f076",
+"title": "La semaine prochaine",
+"setup": "David croise Maurice dans la rue : « J'ai appris que ton magasin avait brûlé ! »",
+"punchline": "Maurice regarde sa montre : « C'est la semaine prochaine. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f077",
+"title": "Le paintball",
+"setup": "En pleine bataille, j'ai sorti un couteau pour économiser mes munitions.",
+"punchline": "Pour une raison que j'ignore, les autres joueurs de paintball ont très mal réagi.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f078",
+"title": "Une porte se ferme",
+"setup": "Quand une porte se ferme, une autre s'ouvre.",
+"punchline": "À part ça, c'est une très bonne voiture.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f079",
+"title": "L'oral",
+"setup": "Un garçon issu d'une famille qui n'a jamais eu affaire à la police doit passer un examen oral. Son père l'attend toute la journée, malade d'inquiétude.",
+"punchline": "Le soir, le garçon rentre rayonnant : « Papa, tu aurais été fier. Ils m'ont interrogé pendant deux heures et je n'ai rien dit. »",
+"category": "kids",
+"adult": false
+},
+{
+"id": "f080",
+"title": "Le thermomètre",
+"setup": "Quelle est la différence entre un thermomètre buccal et un thermomètre rectal ?",
+"punchline": "Le goût.",
+"category": "medical",
+"adult": true
+},
+{
+"id": "f081",
+"title": "Deux avocats",
+"setup": "Quelle est la différence entre un bon avocat et un excellent avocat ?",
+"punchline": "Le bon avocat connaît la loi. L'excellent connaît le juge.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f082",
+"title": "Le chien",
+"setup": "Un patient dit : « Docteur, je crois que je suis un chien. » Le médecin lui montre le divan : « Allongez-vous. »",
+"punchline": "Le patient répond : « Je n'ai pas le droit de monter sur les meubles. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f083",
+"title": "La mémoire",
+"setup": "Un homme dit à son médecin : « Je perds la mémoire. » Le médecin demande : « Depuis quand ? »",
+"punchline": "Le patient répond : « Depuis quand quoi ? »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f084",
+"title": "Combien de temps",
+"setup": "Un patient demande : « Docteur, il me reste combien de temps ? » Le médecin regarde sa montre. « Dix... neuf...",
+"punchline": "huit... »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f085",
+"title": "Une routine",
+"setup": "Avant l'opération, le chirurgien rassure : « Ne vous inquiétez pas, c'est une intervention de routine. »",
+"punchline": "Le patient demande : « Pour vous ou pour moi ? »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f086",
+"title": "Le sport",
+"setup": "Je ne suis pas contre le sport.",
+"punchline": "Je regarde les autres en faire à la télévision.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f087",
+"title": "L'insomnie",
+"setup": "Un homme demande au pharmacien quelque chose qui l'empêchera de dormir la nuit.",
+"punchline": "Le pharmacien lui tend un dossier de demande de crédit immobilier.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f088",
+"title": "La grenouille",
+"setup": "Un jeune homme trouve une grenouille qui parle. « Embrasse-moi et je deviendrai une magnifique princesse. » Il la met dans sa poche. « Attends ! Embrasse-moi et je resterai avec toi une semaine entière à faire tout ce que tu veux. » Il ne répond pas.",
+"punchline": "« Écoute, je n'ai pas le temps pour une copine. Mais une grenouille qui parle, c'est génial. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f089",
+"title": "La rose",
+"setup": "Un acteur qui oublie systématiquement son texte décroche enfin un rôle d'une seule réplique. Le metteur en scène lui explique : « Tu entres avec une rose, tu la respires et tu dis : ah, le parfum de ma bien-aimée. » Le soir de la première, il entre, respire et déclame parfaitement sa phrase.",
+"punchline": "Le metteur en scène hurle depuis les coulisses : « Non ! Tu as oublié la rose ! »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f090",
+"title": "Le temple",
+"setup": "Pendant la visite médicale, le médecin me dit : « Votre corps est un temple. » Je réponds : « Merci. »",
+"punchline": "Il ajoute : « Un temple à l'abandon. La mairie envisage de le démolir. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f091",
+"title": "L'ordonnance",
+"setup": "Le pharmacien a fixé l'ordonnance de mon médecin pendant dix minutes.",
+"punchline": "Il a fini par dire : « Je peux vous donner des antibiotiques, des somnifères, ou un petit chien. Les trois sont plausibles. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f092",
+"title": "La ligne du bas",
+"setup": "L'ophtalmologue m'a demandé de lire la plus petite ligne. J'ai lu : « Paiement à la fin de la consultation. »",
+"punchline": "« Vision parfaite, a-t-elle dit. Mauvaise nouvelle. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f093",
+"title": "La tension",
+"setup": "L'infirmière m'annonce que ma tension est dangereusement élevée.",
+"punchline": "Je lui ai demandé de reprendre la facture que je tenais et de mesurer à nouveau.",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f094",
+"title": "L'humour",
+"setup": "Ma psychologue dit que j'utilise l'humour pour éviter mes émotions. On a ri tous les deux.",
+"punchline": "Enfin, moi j'ai ri. Elle a ajusté la facture.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f095",
+"title": "L'appareil auditif",
+"setup": "Mon appareil auditif est tellement perfectionné que j'entends les gens chuchoter à l'autre bout de la pièce.",
+"punchline": "Malheureusement, il ne les force toujours pas à dire des choses gentilles.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f096",
+"title": "Le pitbull",
+"setup": "Un garçon sauve son ami en assommant le pitbull qui l'attaquait. Un journaliste écrit : « Un jeune supporter du PSG héros du quartier. » Le garçon proteste : « Mais je ne supporte pas le PSG. »",
+"punchline": "Le journaliste recommence : « Un jeune voyou abat de sang-froid le chien adoré d'une famille du quartier. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f097",
+"title": "Sept fois cinq",
+"setup": "Un psychiatre demande à trois patients combien font sept fois cinq. Le premier répond « mille ». Le deuxième répond « jeudi ». Le troisième répond « trente-cinq ». Le médecin, ravi, lui demande comment il a trouvé.",
+"punchline": "« Facile. J'ai divisé mille par jeudi. »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f098",
+"title": "La caméra",
+"setup": "Mon patron m'a demandé pourquoi ma caméra était coupée pendant la visio. J'ai répondu : « Problème de connexion. » Il m'a demandé pourquoi mon micro était coupé.",
+"punchline": "« Conservation de l'emploi. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f099",
+"title": "L'assistant intelligent",
+"setup": "Mon bureau a installé un assistant à intelligence artificielle.",
+"punchline": "Il lit tous les mails, organise toutes les réunions, et a déjà postulé à mon poste.",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f100",
+"title": "Plus d'initiative",
+"setup": "Mon évaluation annuelle indiquait que je devais faire preuve de plus d'initiative.",
+"punchline": "J'ai ajouté un zéro à mon salaire et je l'ai renvoyée pour validation.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f101",
+"title": "Belle visibilité",
+"setup": "L'annonce promettait « une belle visibilité ».",
+"punchline": "C'était bénévole, en extérieur, et en janvier. Pour une fois, l'annonce était parfaitement honnête.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f102",
+"title": "Trois questions",
+"setup": "Un avocat annonce : « Je facture cinq cents euros pour trois questions. » Le client s'étonne : « Ce n'est pas un peu cher ? »",
+"punchline": "« Si. Quelle est votre troisième question ? »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f103",
+"title": "L'imprimante",
+"setup": "L'imprimante ne se bloque que lorsque je suis pressé.",
+"punchline": "C'est la machine la plus émotionnellement intelligente du bâtiment, et elle me déteste.",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f104",
+"title": "La vidéo de sécurité",
+"setup": "La vidéo de sécurité au travail commençait par : « Tout ce que vous allez voir aurait pu être évité. »",
+"punchline": "Alors je l'ai éteinte.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f105",
+"title": "C'est ça",
+"setup": "Un soldat ramasse chaque papier qu'il croise, l'examine et murmure : « Ce n'est pas ça. » Après des mois, les médecins le déclarent inapte et lui remettent sa lettre de réforme.",
+"punchline": "Il la lit, sourit et dit : « C'est ça ! »",
+"category": "medical",
+"adult": false
+},
+{
+"id": "f106",
+"title": "Pôle emploi",
+"setup": "Travailler à l'agence pour l'emploi doit être stressant.",
+"punchline": "S'ils vous licencient, vous devez quand même vous présenter le lendemain matin.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f107",
+"title": "La guillotine",
+"setup": "Un prêtre, un avocat et un ingénieur sont condamnés à la guillotine. La lame se bloque pour le prêtre, puis pour l'avocat : on les libère au nom de la clémence divine. Vient le tour de l'ingénieur.",
+"punchline": "Il s'allonge, lève les yeux et dit : « Attendez, je crois que je vois le problème. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f108",
+"title": "En moyenne",
+"setup": "Un ingénieur tire un mètre à gauche de la cible. Un physicien tire un mètre à droite.",
+"punchline": "Le statisticien exulte : « En moyenne, on l'a touchée ! »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f109",
+"title": "La boîte de conserve",
+"setup": "Un ingénieur, un physicien et un mathématicien sont enfermés chacun dans une pièce avec des conserves mais aucun ouvre-boîte. L'ingénieur démonte la boîte. Le physicien calcule l'angle de chute exact pour la faire éclater.",
+"punchline": "Le mathématicien meurt de faim à côté d'un tableau démontrant qu'une solution existe.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f110",
+"title": "Le budget",
+"setup": "Un doyen se plaint : « La physique exige des laboratoires coûteux. Les mathématiques ne demandent que du papier, des crayons et des corbeilles. »",
+"punchline": "« La philosophie coûte encore moins cher : eux n'ont pas besoin de corbeilles. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f111",
+"title": "Tous des imbéciles",
+"setup": "Un homme entre dans un bar et crie : « Tous les avocats sont des imbéciles ! » Un client proteste. « Pourquoi, vous êtes avocat ? » « Non. »",
+"punchline": "« Je suis imbécile. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f112",
+"title": "La réunion",
+"setup": "Un cadre entre dans un bar après trois heures de réunion. Le barman lui demande ce qui a été décidé.",
+"punchline": "« De programmer une autre réunion. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f113",
+"title": "Les deux atomes",
+"setup": "Deux atomes entrent dans un bar. L'un dit : « J'ai perdu un électron. » L'autre demande : « Tu es sûr ? »",
+"punchline": "« Je suis positif. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f114",
+"title": "La double erreur",
+"setup": "Un salarié signale qu'il manque cinquante euros sur sa paie. La comptabilité répond : « Le mois dernier nous vous avons versé cinquante euros de trop et vous n'avez rien dit. »",
+"punchline": "« Je peux fermer les yeux sur une erreur, mais pas sur deux d'affilée. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f115",
+"title": "Le maçon",
+"setup": "Un architecte, un ingénieur et un maçon débattent de qui compte le plus. L'architecte dit : « Je conçois. » L'ingénieur dit : « Je calcule. »",
+"punchline": "Le maçon dit : « Sans moi, vous avez un joli dessin et de beaux calculs posés dans un champ. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f116",
+"title": "Devenir millionnaire",
+"setup": "Un client demande à son conseiller financier : « Comment devenir millionnaire rapidement ? »",
+"punchline": "« Commencez milliardaire et patientez. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f117",
+"title": "Ralentir",
+"setup": "Une institutrice demande à un élève pourquoi il est en retard.",
+"punchline": "« Le panneau disait : école, ralentir. J'ai ralenti. »",
+"category": "kids",
+"adult": false
+},
+{
+"id": "f118",
+"title": "La facture détaillée",
+"setup": "Un client exige une facture détaillée pour cinq minutes de plomberie. Le plombier écrit : « Taper sur le tuyau : un euro. »",
+"punchline": "« Savoir où taper : cent quarante-neuf euros. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f119",
+"title": "Les trois perroquets",
+"setup": "Une animalerie vend trois perroquets identiques à cinq cents, mille et deux mille euros. Le premier connaît l'informatique, le deuxième sait programmer. « Et le troisième, il fait quoi ? »",
+"punchline": "« Aucune idée, dit le vendeur. Mais les deux autres l'appellent Chef. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f120",
+"title": "La recherche",
+"setup": "Voler l'idée d'une seule personne, c'est du plagiat.",
+"punchline": "En voler à beaucoup, c'est de la recherche.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f121",
+"title": "L'ampoule",
+"setup": "Combien faut-il de développeurs pour changer une ampoule ? Aucun.",
+"punchline": "C'est un problème matériel.",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f122",
+"title": "Radin",
+"setup": "Je ne suis pas radin.",
+"punchline": "Je suis émotionnellement attaché à mon argent.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f123",
+"title": "La procrastination",
+"setup": "Je ne procrastine pas.",
+"punchline": "Je laisse mûrir mes décisions jusqu'à ce qu'elles pourrissent.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f124",
+"title": "Le livre",
+"setup": "Un homme demande à la bibliothécaire un livre pour arrêter de procrastiner.",
+"punchline": "« Il devrait arriver la semaine prochaine. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f125",
+"title": "La souris",
+"setup": "Un chercheur teste les réflexes d'une souris en lui retirant les pattes une par une. Après la quatrième, la souris ne bouge plus quand on lui ordonne d'avancer.",
+"punchline": "Il note : « Conclusion : retirer les quatre pattes provoque une perte d'audition. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f126",
+"title": "Le concessionnaire",
+"setup": "Un producteur envoie deux places de première à un critique célèbre avec un mot : « Venez avec un ami, si vous en avez un. » Le critique renvoie les billets avec sa réponse.",
+"punchline": "« Je ne peux pas venir à la première. Je viendrai à la deuxième représentation, s'il y en a une. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f127",
+"title": "Le billet déchiré",
+"setup": "Un homme achète un billet de cinéma. À l'entrée, l'ouvreuse le déchire en deux. Il retourne à la caisse, en achète un autre, l'ouvreuse le déchire aussi. Il en achète un troisième. La caissière finit par lui demander pourquoi.",
+"punchline": "« Parce que la folle à l'entrée n'arrête pas de détruire mes billets. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f128",
+"title": "La tour Eiffel",
+"setup": "Un touriste demande à un chauffeur de taxi parisien combien de temps a pris la construction de chaque monument. À chaque réponse, il assure que chez lui on aurait fait dix fois plus vite. Ils passent devant la tour Eiffel. « Et celle-là ? »",
+"punchline": "Le chauffeur hausse les épaules : « Aucune idée. Elle n'était pas là hier. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f129",
+"title": "Le comprimé",
+"setup": "Un Texan, un New-Yorkais et un Marseillais rencontrent un génie. Chacun doit jeter un objet à la mer ; si le génie le retrouve, l'homme meurt. Le génie retrouve la pièce du premier, la bague du second, puis cherche des heures pour le troisième.",
+"punchline": "« Continuez à chercher, dit le Marseillais. J'ai jeté un comprimé effervescent. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f130",
+"title": "Trois langues",
+"setup": "Comment appelle-t-on quelqu'un qui parle trois langues ? Trilingue. Deux langues ? Bilingue.",
+"punchline": "Une seule langue ? Français.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f131",
+"title": "Le jacuzzi",
+"setup": "À un feu rouge, le propriétaire d'une minuscule voiture personnalisée demande au conducteur d'une berline de luxe si elle a un GPS, une télévision et un réfrigérateur. La berline a tout. Vexé, le conducteur va sonner à la vitre de la petite voiture, qui met un long moment à s'ouvrir.",
+"punchline": "« Vous m'avez dérangé dans mon jacuzzi pour ça ? »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f132",
+"title": "Le programme",
+"setup": "Un candidat promet de créer des milliers d'emplois.",
+"punchline": "Il est élu, et chaque électeur a immédiatement besoin d'un deuxième.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f133",
+"title": "Mon bilan",
+"setup": "Un élu déclare : « Mon bilan parle de lui-même. »",
+"punchline": "Son avocat chuchote : « C'est précisément ce que nous essayons d'éviter. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f134",
+"title": "Le formulaire simplifié",
+"setup": "L'administration a simplifié la déclaration d'impôts à deux questions. Un : combien avez-vous gagné ?",
+"punchline": "Deux : pourquoi l'avez-vous encore ?",
+"category": "money",
+"adult": false
+},
+{
+"id": "f135",
+"title": "La dette publique",
+"setup": "J'ai essayé d'expliquer la dette publique à mon fils.",
+"punchline": "Il a emprunté vingt euros, en a dépensé trente et a accusé sa sœur. Il est prêt pour la politique.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f136",
+"title": "Les questions",
+"setup": "Un porte-parole annonce : « Nous allons maintenant prendre vos questions. » Les journalistes applaudissent.",
+"punchline": "« Je n'ai pas dit que nous y répondrions. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f137",
+"title": "Le signe",
+"setup": "J'ai demandé un signe à l'univers.",
+"punchline": "Il m'a envoyé une facture.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f138",
+"title": "Faire ce qu'il aimait",
+"setup": "On dit toujours : « Au moins, il est mort en faisant ce qu'il aimait. »",
+"punchline": "Je veux mourir en faisant quelque chose que je déteste, pour qu'on puisse dire : « Tant mieux. Il n'aura pas eu à finir. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f139",
+"title": "Un mois sans alcool",
+"setup": "Un mois sans alcool a amélioré mon sommeil, ma peau, mon humeur, mes économies et ma santé.",
+"punchline": "Malheureusement, ça a aussi fait durer chaque soirée neuf heures.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f140",
+"title": "L'ingénieur en enfer",
+"setup": "Un ingénieur meurt et atterrit en enfer par erreur. En quelques semaines, il y installe la climatisation, des ascenseurs et l'eau courante. Le paradis exige son retour. Le diable refuse. Dieu menace de faire un procès.",
+"punchline": "Le diable éclate de rire : « Et vous allez trouver un avocat où, là-haut ? »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f141",
+"title": "La sortie",
+"setup": "Un homme entre dans un cimetière et demande où se trouve la sortie.",
+"punchline": "Le gardien répond : « Tout droit. Pour l'instant. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f142",
+"title": "La falaise",
+"setup": "Une femme se noie au pied d'une immense falaise sous les yeux d'une foule impuissante. Soudain, un homme plonge depuis les rochers et nage droit sur elle. Il la ramène sur la plage sous les applaudissements. On lui demande comment il a trouvé un tel courage.",
+"punchline": "Il reprend son souffle : « Merci. Mais quand je remonte là-haut, je veux savoir quel crétin m'a poussé. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f143",
+"title": "Le braquage",
+"setup": "Un homme monte dans un bus et hurle : « Personne ne bouge ! Les femmes à gauche, les hommes à droite ! Je vais braquer les femmes et embrasser les hommes ! » Une passagère proteste : « Pourquoi pas l'inverse ? »",
+"punchline": "Un homme au fond intervient : « Madame, ne changez pas le plan maintenant que pour une fois il est bien fait. »",
+"category": "misc",
+"adult": true
+},
+{
+"id": "f144",
+"title": "La lettre au Père Noël",
+"setup": "Un orphelin écrit au Père Noël pour demander cent euros. Touchés, les employés de la poste réunissent cinquante euros et les lui envoient. Une semaine plus tard, ils reçoivent une nouvelle lettre.",
+"punchline": "« Cher Père Noël, merci pour l'argent. La prochaine fois, ne passe pas par la poste : les voleurs en ont gardé la moitié. »",
+"category": "kids",
+"adult": false
+},
+{
+"id": "f145",
+"title": "Vendre New York",
+"setup": "Trois mères se vantent de leurs fils. La première dit que le sien pourrait acheter tout Paris. La deuxième dit que le sien pourrait acheter Paris et Lyon.",
+"punchline": "La troisième hausse les épaules : « Et qu'est-ce qui vous fait croire que mon fils veut vendre ? »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f146",
+"title": "La place de parking",
+"setup": "Un homme en retard tourne autour du pâté de maisons en priant : « Mon Dieu, si tu me trouves une place, j'irai à la messe tous les jours, je donnerai aux pauvres et je ne manquerai plus jamais une prière. » Une place se libère juste devant lui.",
+"punchline": "« Laisse tomber, Seigneur. J'en ai trouvé une. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f147",
+"title": "Le mur",
+"setup": "Des journalistes interrogent un vieil homme qui prie chaque soir depuis quarante ans. « Vous priez pour quoi ? » « Pour la paix, la fin de la haine, et que mes petits-enfants vivent mieux. » « Et vous ressentez quoi, après quarante ans ? »",
+"punchline": "Le vieil homme soupire : « La plupart du temps, j'ai l'impression de parler à un mur. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f148",
+"title": "L'appel local",
+"setup": "Deux amis meurent dans un accident et arrivent en enfer. Le diable autorise un appel à dix mille euros la minute. Le premier appelle sa femme deux minutes et doit vingt mille euros. Le second appelle sa mère une heure et doit trois euros.",
+"punchline": "Le diable hausse les épaules : « Vers chez sa mère, c'est un appel local. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f149",
+"title": "Les trois règles",
+"setup": "Un homme trouve un génie et se voit offrir trois vœux. Le génie précise : « Je les exaucerai, mais il y a trois règles : vous ne pouvez pas ramener les morts, vous ne pouvez pas demander plus de vœux, et vous ne pouvez pas modifier le passé. » L'homme réfléchit longuement.",
+"punchline": "Le génie ajoute : « Il y a quatre règles. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f150",
+"title": "Le troisième bébé",
+"setup": "Trois cigognes transportent des bébés. « Je livre le mien à de jeunes mariés. » « Le mien à un couple qui attendait depuis dix ans. » « Et moi je vais au couvent. » Les deux autres s'étonnent.",
+"punchline": "« Je ne livre rien du tout. J'adore leur faire peur. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f151",
+"title": "Le comité d'éthique",
+"setup": "Le comité d'éthique s'est réuni à huis clos.",
+"punchline": "Il leur fallait de l'intimité pour décider de ce à quoi devait ressembler la transparence.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f152",
+"title": "Le badge visiteur",
+"setup": "Un lobbyiste entre à l'Assemblée avec un badge visiteur.",
+"punchline": "Le gardien lui dit : « Vous venez plus souvent que les députés. Prenez l'entrée du personnel. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f153",
+"title": "La session d'urgence",
+"setup": "Les élus ont convoqué une session extraordinaire à minuit.",
+"punchline": "À l'aube, ils avaient rebaptisé un bureau de poste et s'accusaient mutuellement de l'urgence.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f154",
+"title": "Le monument",
+"setup": "La ville a dépensé cinq millions pour ériger un monument à la rigueur budgétaire.",
+"punchline": "Il a coûté dix millions de plus que prévu.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f155",
+"title": "Six mille pages",
+"setup": "Le projet de loi faisait six mille pages.",
+"punchline": "Chaque élu a voté avec assurance après avoir lu le titre.",
+"category": "work",
+"adult": false
+},
+{
+"id": "f156",
+"title": "Un monde sans avocats",
+"setup": "Un génie accorde trois vœux à un homme. « Je veux un monde sans avocats. » Le génie acquiesce : « C'est fait. Il ne vous reste aucun vœu. » L'homme proteste : « Vous aviez dit trois ! »",
+"punchline": "« Attaquez-moi en justice. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f157",
+"title": "Le taux variable",
+"setup": "Un banquier explique un prêt à taux variable. Le client demande ce que ça signifie concrètement.",
+"punchline": "« Aucun de nous deux ne sait ce que vous paierez, mais je gagne de l'argent dans les deux cas. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f158",
+"title": "Deux cents euros la question",
+"setup": "Un homme demande à un avocat : « Combien facturez-vous une question ? » « Deux cents euros. » « Ce n'est pas un peu cher ? » L'avocat hoche la tête.",
+"punchline": "« Si. Et cette réponse porte votre total à quatre cents. »",
+"category": "work",
+"adult": false
+},
+{
+"id": "f159",
+"title": "Le goût du pain",
+"setup": "Un homme affamé regarde un boulanger sortir ses pains du four. Il soupire : « Ça fait plus d'une semaine que je n'ai pas goûté de pain. »",
+"punchline": "Le boulanger hoche la tête avec bienveillance : « Rassurez-vous, monsieur. Le goût n'a pas changé. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f160",
+"title": "Mise sur le neuf",
+"setup": "Chaque nuit, une voix mystérieuse répète à un homme : « Quitte ton emploi. Vends tout. Va au casino. Mise tout sur le neuf. » Au bout de plusieurs semaines, il obéit. Il mise absolument tout sur le neuf. La bille s'arrête sur le huit.",
+"punchline": "La voix murmure : « Bon... c'est fâcheux. »",
+"category": "money",
+"adult": false
+},
+{
+"id": "f161",
+"title": "Bière gratuite",
+"setup": "Un homme fait irruption dans un bar et crie : « Bière gratuite dehors ! » Tout le monde se précipite. Quelques secondes plus tard, les hurlements commencent. « Qu'est-ce que vous avez fait ? » hurle le barman.",
+"punchline": "« Désolé. Il y a trois ours dehors. Je pensais sincèrement qu'aucun n'aurait soif. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f162",
+"title": "Le fou et son chien",
+"setup": "Un homme raconte : « Aujourd'hui j'ai vu un fou qui parlait à son chien. En rentrant, je l'ai raconté à mon chat. »",
+"punchline": "« On a bien ri tous les deux. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f163",
+"title": "Le braquage à l'éléphant",
+"setup": "Un camion s'arrête devant une bijouterie. Un éléphant en descend, brise la vitrine, rafle les bijoux avec sa trompe et repart. La police interroge un témoin : « Vous pouvez le décrire ? C'était un éléphant d'Afrique ou d'Asie ? »",
+"punchline": "Le témoin réfléchit : « Difficile à dire. Il portait une cagoule. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f164",
+"title": "Le deltaplane",
+"setup": "Deux chasseurs très éméchés aperçoivent un deltaplane. Le premier dit : « C'est le plus gros oiseau que j'aie jamais vu. » Il tire. Le pilote tombe, mais le deltaplane continue sa route. Le deuxième dit : « Je crois que tu l'as raté. »",
+"punchline": "Le premier baisse son fusil : « Peut-être, mais il a lâché sa proie. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f165",
+"title": "La lune ou le soleil",
+"setup": "Deux hommes ivres se disputent sous un lampadaire. « Je te dis que c'est la lune. » « Et moi je te dis que c'est le soleil. » Ils arrêtent un passant : « Monsieur, s'il vous plaît, c'est la lune ou le soleil ? »",
+"punchline": "L'homme lève les yeux : « Désolé, je ne suis pas du quartier. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f166",
+"title": "Le miroir",
+"setup": "Deux hommes ivres sont assis au bar. Le premier regarde dans un miroir et dit : « Je connais ce type. Je suis sûr de l'avoir déjà vu quelque part. »",
+"punchline": "Le second prend le miroir, l'examine et répond : « Évidemment que tu le connais, imbécile. C'est moi. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f167",
+"title": "Les deux labradors",
+"setup": "Un homme promène deux magnifiques chiens. Un passant demande : « Quelle race ? » « Celui-ci est un labrador. » « Et l'autre ? » « L'autre aussi. » « Ils sont frères ? »",
+"punchline": "« L'autre aussi. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f168",
+"title": "Le génie qui fait du thé",
+"setup": "Un homme arrive en voiture de sport. Son ami lui propose d'échanger contre une vieille guimbarde et une lampe magique. Pour prouver que la lampe fonctionne, il la frotte. Un génie apparaît. « Génie, je veux un palais ! »",
+"punchline": "Le génie secoue la tête : « Désolé. Je sais seulement faire le thé. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f169",
+"title": "À contresens",
+"setup": "Un homme descend du train, verdâtre. Son ami lui demande ce qui s'est passé. « J'ai fait tout le trajet dos à la route. » « Pourquoi tu n'as pas échangé avec la personne en face ? »",
+"punchline": "« Impossible. Il n'y avait personne en face. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f170",
+"title": "De quel côté es-tu",
+"setup": "Michel raconte à Joseph qu'il a croisé un lion à la chasse. « Je me suis mis à courir. » « Le lion court plus vite que toi. » « Alors j'ai grimpé à un arbre. » « Les lions ont des griffes, il t'a suivi. » « Alors j'ai sauté dans la rivière. » « Les lions nagent très bien. »",
+"punchline": "Michel explose : « Tu es de quel côté, du mien ou du lion ? »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f171",
+"title": "Tirez sur le chien",
+"setup": "Un chercheur explique comment capturer un gorille vivant. Il lui faut un pitbull, des menottes et un fusil. « Je grimpe à l'arbre et je scie la branche. Le gorille tombe, le chien le mord, je le menotte. » Un étudiant demande à quoi sert le fusil.",
+"punchline": "« Si c'est moi qui tombe de l'arbre, vous tirez sur le chien. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f172",
+"title": "La file d'attente",
+"setup": "À un enterrement, un homme apprend que les deux chiens du veuf ont dévoré sa femme et sa belle-mère. « Vous pourriez me les prêter ? »",
+"punchline": "Le veuf montre l'immense cortège derrière lui : « Faites la queue. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f173",
+"title": "Le mille-pattes",
+"setup": "Un homme achète un mille-pattes et lui propose d'aller boire un verre. Pas de réponse. Il répète, puis finit par hurler : « Tu viens, oui ou non ? »",
+"punchline": "Une petite voix répond : « J'ai entendu ! Je mets mes chaussures ! »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f174",
+"title": "La chèvre",
+"setup": "Une vieille dame supplie le vétérinaire de sauver sa chèvre mourante. « La seule chance, c'est de la garder au chaud chez vous. » « Ce sera compliqué, à cause de l'odeur. »",
+"punchline": "Elle réfléchit un instant : « Tant pis. La chèvre s'y fera. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f175",
+"title": "Le ver de terre",
+"setup": "Un ver de terre aperçoit un autre ver à côté de lui et tente d'engager la conversation. L'autre ne répond jamais.",
+"punchline": "Après plusieurs questions, il soupire : « Zut. Je parle encore à mon propre derrière. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f176",
+"title": "La cabine voisine",
+"setup": "Dans les toilettes publiques, un homme entend une voix venant de la cabine voisine : « Salut, comment ça va ? » Il répond poliment. La voix demande ce qu'il fait, il répond encore. Un silence.",
+"punchline": "Puis la voix reprend : « Je te rappelle. Il y a un imbécile dans la cabine d'à côté qui répond à toutes mes questions. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f177",
+"title": "Les légumes",
+"setup": "Deux cannibales dînent. L'un dit : « Franchement, je n'aime pas ma belle-mère. »",
+"punchline": "L'autre répond : « Très bien, mais mange au moins les légumes. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f178",
+"title": "Le chien cinéphile",
+"setup": "Un chien regarde un film. Il rit, pleure et applaudit exactement aux bons moments.",
+"punchline": "Son maître commente : « C'est incroyable. Il avait détesté le livre. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f179",
+"title": "Le fer à repasser",
+"setup": "Un homme s'est brûlé l'oreille avec un fer à repasser. « Comment avez-vous fait ? » « Le téléphone a sonné et j'ai attrapé le fer. » « Et l'autre oreille ? »",
+"punchline": "« J'ai voulu appeler le médecin. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f180",
+"title": "Les modèles",
+"setup": "Les histoires pour enfants regorgent de modèles. L'un vit dans un arbre sans vêtements. Une princesse s'échappe à minuit. Un garçon ment jusqu'à ce que son nez touche le mur d'en face.",
+"punchline": "Et après on s'étonne que les enfants soient bizarres.",
+"category": "kids",
+"adult": false
+},
+{
+"id": "f181",
+"title": "Les patins",
+"setup": "Deux pêcheurs énervés assomment un skieur nautique avec une rame. Comme il ne remonte pas, ils plongent, récupèrent un corps et commencent le bouche-à-bouche. « Son haleine est infecte », dit le premier.",
+"punchline": "L'autre regarde les pieds du corps : « Arrête. Ce n'est pas lui. Celui-là a des patins à glace. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f182",
+"title": "Mercredi",
+"setup": "Dans l'avion, un homme demande l'heure à son voisin. Celui-ci regarde sa montre : « Mercredi. »",
+"punchline": "« Merci. C'est là que je descends. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f183",
+"title": "L'île",
+"setup": "Un navire longe une île où un homme barbu et à moitié nu agite les bras comme un fou. Un passager alerte le capitaine.",
+"punchline": "« Je sais, répond le capitaine. Chaque fois qu'on passe devant son île, il devient hystérique. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f184",
+"title": "Sourd d'une oreille",
+"setup": "Un policier arrête un conducteur ivre : « Monsieur, votre femme est tombée de la voiture au dernier rond-point. »",
+"punchline": "L'homme soupire de soulagement : « Ah, c'est donc ça. Je me croyais devenu sourd d'une oreille. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f185",
+"title": "Le partage de fichiers",
+"setup": "Un père moderne explique à son fils comment il est né.",
+"punchline": "« Ta mère et moi nous sommes rencontrés en ligne. Je lui ai envoyé un message, on a décidé de partager des fichiers, et il y a eu un virus. »",
+"category": "tech",
+"adult": true
+},
+{
+"id": "f186",
+"title": "Deux whiskys",
+"setup": "Chaque jour, un colosse entre dans un bar : « Un whisky. Et je ne paie pas, parce que je n'ai peur de personne. » Le patron finit par embaucher un homme encore plus grand. Le lendemain, le colosse revient, voit le videur et sourit.",
+"punchline": "Il se tourne vers le barman : « Alors ce sera deux whiskys. Et aucun de nous deux ne paie. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f187",
+"title": "Comme mon grand-père",
+"setup": "Un homme ne retrouve pas les clés de sa voiture devant un bar. « Je compte jusqu'à trois. Si mes clés ne reviennent pas, je ferai exactement ce que mon grand-père a fait. » Silence total. Il compte. Rien. Il s'en va.",
+"punchline": "Un client demande au barman ce qu'a fait le grand-père. « Il est rentré à pied. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f188",
+"title": "On pêche",
+"setup": "Un vieil homme demande trois fois à un pêcheur : « Alors, on pêche ? » Agacé, le pêcheur remballe son matériel et grimpe la colline à vélo. Arrivé en haut, il souffle.",
+"punchline": "Le vieil homme sourit : « Alors, on fait du vélo ? »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f189",
+"title": "L'ascenseur",
+"setup": "Un père et son fils, qui n'ont jamais vu d'ascenseur, observent une vieille dame y entrer. Quelques instants plus tard, les portes s'ouvrent et une superbe jeune femme en sort.",
+"punchline": "Le père murmure : « Fiston, va chercher ta mère. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f190",
+"title": "L'évasion",
+"setup": "Trois détenus préparent une évasion. Le premier veut tordre les barreaux et assommer chaque gardien. Le deuxième veut se liquéfier pour passer sous la porte. Le troisième les regarde tranquillement.",
+"punchline": "« Pourquoi s'évader ? On est bien ici, non ? »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f191",
+"title": "Les six œufs",
+"setup": "Six œufs sont dans le réfrigérateur. Cinq d'entre eux fixent nerveusement le sixième, qui est marron et couvert de poils.",
+"punchline": "L'un finit par chuchoter : « Détendez-vous, idiots. C'est un kiwi. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f192",
+"title": "Cache-cache",
+"setup": "Trois steaks se promènent ensemble. Soudain, deux disparaissent. Le troisième les cherche partout jusqu'à ce qu'ils réapparaissent. « Vous étiez où ? »",
+"punchline": "« On jouait à cache-viande. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f193",
+"title": "Se marier",
+"setup": "Un garçon et une fille de fermes voisines grandissent ensemble, vont à l'école ensemble et deviennent adultes sans jamais quitter la campagne. Un jour il lui propose de se marier.",
+"punchline": "« J'adorerais, répond-elle, mais avec qui ? On ne connaît personne. »",
+"category": "marriage",
+"adult": false
+},
+{
+"id": "f194",
+"title": "Le gyrophare",
+"setup": "Devant un bar, un homme très ivre tapote le toit de chaque voiture du parking. « En quoi ça va vous aider à trouver la vôtre ? » demande le barman.",
+"punchline": "« Facile. La mienne a un gyrophare bleu dessus. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f195",
+"title": "En face",
+"setup": "Un bar ouvre en face d'un cimetière et affiche : « Quoi qu'on en dise, on est mieux ici qu'en face. » Le cimetière répond par une pancarte.",
+"punchline": "« Quoi qu'on en dise, tous ceux qui sont ici viennent d'en face. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f196",
+"title": "Le papier toilette",
+"setup": "L'argent, c'est comme le papier toilette. On ne le respecte que lorsqu'il n'en reste presque plus.",
+"punchline": "À deux feuilles, ce n'est plus du papier, c'est une stratégie.",
+"category": "money",
+"adult": false
+},
+{
+"id": "f197",
+"title": "La raquette",
+"setup": "Mettez une raquette électrique anti-moustiques entre les mains de la personne la plus douce du monde et elle devient un psychopathe.",
+"punchline": "Ma grand-mère chassait les moustiques dehors, en pleine rue, avec des revers de championne.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f198",
+"title": "Le feu de signalisation",
+"setup": "Un site m'a demandé de cliquer sur toutes les cases contenant un feu de signalisation. J'ai cliqué sur le feu. Puis sur le poteau, parce que le poteau fait partie du feu.",
+"punchline": "L'écran a répondu : « Veuillez réessayer. Vous êtes un robot. »",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f199",
+"title": "Le kit d'urgence",
+"setup": "Mon kit d'urgence contient de l'eau, des piles, une lampe et du chocolat.",
+"punchline": "Si la catastrophe dure plus longtemps que le chocolat, j'accepte la décision de la nature.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f200",
+"title": "Le poisson rouge",
+"setup": "J'ai acheté un poisson rouge parce que le magasin disait qu'il ne demandait aucun entretien.",
+"punchline": "Maintenant il me regarde manger du poisson avec la patience calme d'un futur témoin.",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f201",
+"title": "Le bouton d'ascenseur",
+"setup": "J'étais pressé, alors j'ai appuyé onze fois sur le bouton de l'ascenseur. Il est arrivé exactement à la même vitesse.",
+"punchline": "Mais je me suis senti comme un homme qui avait tout tenté.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f202",
+"title": "La machine à laver",
+"setup": "Ma machine à laver ne mange pas les chaussettes.",
+"punchline": "Elle en prélève une par paire pour finir par construire une personne complète.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f203",
+"title": "L'horoscope",
+"setup": "Mon horoscope annonçait une perte financière inattendue.",
+"punchline": "Puis l'application m'a facturé la prédiction premium.",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f204",
+"title": "Petit-déjeuner à toute heure",
+"setup": "Le panneau disait : « Petit-déjeuner servi à toute heure. »",
+"punchline": "J'ai donc commandé des crêpes pendant la Renaissance.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f205",
+"title": "Le chien menteur",
+"setup": "Un homme vend un chien qui parle pour dix euros. « Pourquoi si peu cher ? » demande l'acheteur. « Parce qu'il ment sur tout », répond le propriétaire.",
+"punchline": "Le chien se penche et chuchote : « Il dit ça uniquement parce que je sais où il a enterré les corps. »",
+"category": "animals",
+"adult": false
+},
+{
+"id": "f206",
+"title": "Le miroir muet",
+"setup": "Mon miroir me dit que j'ai l'air fatigué.",
+"punchline": "Il n'emploie jamais de mots. Ça le rend encore plus grossier.",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f207",
+"title": "Le voyageur temporel",
+"setup": "Un voyageur temporel entre dans un bar. Le barman lui dit : « On ne sert pas les voyageurs temporels ici. » L'homme prend un air surpris.",
+"punchline": "« Ce n'est pas ce que vous avez dit demain. »",
+"category": "bar",
+"adult": false
+},
+{
+"id": "f208",
+"title": "Le voleur",
+"setup": "Un homme déclare à la police : « Le voleur mesurait environ un mètre quatre-vingts et portait une cagoule. » « Un signe particulier ? »",
+"punchline": "« Oui. Il n'arrêtait pas de corriger ma grammaire. »",
+"category": "misc",
+"adult": false
+},
+{
+"id": "f209",
+"title": "L'horloge cassée",
+"setup": "Une horloge cassée donne l'heure juste deux fois par jour.",
+"punchline": "La mienne est numérique. Elle affiche 00:00 toute la journée et n'a jamais douté une seule fois.",
+"category": "tech",
+"adult": false
+},
+{
+"id": "f210",
+"title": "La caution",
+"setup": "J'ai passé une nuit dans une maison hantée. À minuit, un fantôme a murmuré : « Sors d'ici. »",
+"punchline": "J'ai répondu : « Après vous. C'est moi qui ai versé la caution. »",
+"category": "misc",
+"adult": false
+}
+]

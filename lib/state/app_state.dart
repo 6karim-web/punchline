@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../data/joke_repository.dart';
 import '../l10n/app_locale.dart';
 
 /// One notifier for the settings that change what is on screen.
@@ -20,6 +21,9 @@ class AppState extends ChangeNotifier {
   Future<void> setLocale(AppLocale value) async {
     if (_locale == value) return;
     _locale = value;
+    // The catalogue changes with the language, so it must be swapped before
+    // anything rebuilds — otherwise the library shows the previous book.
+    await JokeRepository.instance.load(value);
     notifyListeners();
     (await SharedPreferences.getInstance()).setString('locale', value.code);
   }

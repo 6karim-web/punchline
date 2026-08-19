@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/services.dart';
+import '../l10n/app_locale.dart';
 import '../models/models.dart';
 
 /// Loads the bundled joke collection once, then serves it without repeats.
@@ -12,11 +13,23 @@ class JokeRepository {
   List<Joke> _all = const [];
   final Set<String> _seen = {};
   final _random = Random();
-  bool _loaded = false;
+  String? _loadedCode;
 
-  Future<void> load() async {
-    if (_loaded) return;
-    final raw = await rootBundle.loadString('assets/jokes.json');
+  /// One catalogue per language. These are not translations of each other —
+  /// a joke that lands in French dies word-for-word in English, so each
+  /// language owns its own book. Missing catalogues fall back to English
+  /// rather than showing an empty library.
+  static const _assets = <String, String>{
+    'en': 'assets/jokes.json',
+    'fr': 'assets/jokes_fr.json',
+  };
+
+  Future<void> load(AppLocale locale) async {
+    final path = _assets[locale.code] ?? _assets['en']!;
+    if (_loadedCode == path) return;
+    _loadedCode = path;
+    _seen.clear();
+    final raw = await rootBundle.loadString(path);
     final list = jsonDecode(raw) as List<dynamic>;
     _all = list
         .map((e) => Joke(

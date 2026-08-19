@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import '../data/club.dart';
 import '../data/profile_repository.dart';
 import '../games/arena_game.dart';
+import '../games/decoder_game.dart';
+import '../games/museum_game.dart';
+import '../games/wheel_game.dart';
 import '../games/stage_game.dart';
 import '../games/tribunal_game.dart';
 import '../l10n/strings.dart';
@@ -23,6 +26,9 @@ class _LobbyScreenState extends State<LobbyScreen> {
         'tribunal' => const TribunalGame(),
         'arena' => const ArenaGame(),
         'stage' => const StageGame(),
+        'wheel' => const WheelGame(),
+        'decoder' => const DecoderGame(),
+        'museum' => const MuseumGame(),
         _ => null,
       };
 

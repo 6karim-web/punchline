@@ -15,11 +15,11 @@ import 'theme/tokens.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Future.wait([
-    JokeRepository.instance.load(),
     Profile.instance.load(),
     JournalRepository.instance.load(),
     AppState.instance.load(),
   ]);
+  await JokeRepository.instance.load(AppState.instance.locale);
   runApp(const PunchlineApp());
 }
 
